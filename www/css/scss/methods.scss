@@ -1,0 +1,18 @@
+@mixin iconify($url) {
+  background-image: $url;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+@mixin transform($transformation){
+  -webkit-transform: $transformation;
+  -moz-transform: $transformation;
+  -ms-transform: $transformation;
+  -o-transform: $transformation;
+  transform: $transformation;
+}
+@mixin box-shadow($args){
+  -webkit-box-shadow: $args;
+  -moz-box-shadow: $args;
+  box-shadow: $args;
+}

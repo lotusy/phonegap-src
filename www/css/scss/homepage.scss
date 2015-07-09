@@ -1,0 +1,131 @@
+home-page{
+  z-index: 1;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(lighten($yellow-light,5%), lighten($yellow-medium, 5%));
+  #falling-food-container{
+    height:100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    .falling-food{
+      @extend .fallSpin;
+      width: 8vh;
+      height: 8vh;
+      -webkit-background-size: contain;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+  .homepage-center{
+    top: 40%;
+    .profile-picture-container{
+      background-color: $yellow-medium;
+      @include box-shadow(0 0px 20px 0 rgba(black, 0.3));
+      height: 18vh;
+      width: 18vh;
+      border-radius: 50%;
+      margin: 0 auto 7% auto;
+      position:relative;
+      .profile-picture{
+        height: calc(100% - 10px);
+        width: calc(100% - 10px);
+        border-radius: inherit;
+        margin: 0px auto;
+        @include iconify(url(../../assets/home_screen/profile-default.png));
+      }
+      .profile-rank{
+        @include iconify(url(../../assets/global_assets/bunlevel1.png));
+        width: 6vh;
+        height: 6vh;
+        position: absolute;
+        bottom: -0.5vh;
+        right: -0.5vh;
+      }
+    }
+    .dishes-tried{
+      margin-bottom: 7%;
+      h1{
+        font-size: 16vh;
+        text-align: center;
+        color: $brown-dark;
+        font-weight: normal;
+      }
+      h2{
+        font-family: Aleo;
+        color: $orange-light;
+        font-size: 3vh;
+        text-align: center;
+        font-weight: normal;;
+      }
+    }
+    .add-dishes{
+      .swiper{
+        background-color: $dev-green;
+        width: 100%;
+        height: 10vh;
+      }
+      h2{
+        font-family: Aleo;
+        font-weight: normal;
+        text-align: center;
+        color: $orange-light;
+        font-size: 3vh;
+      }
+    }
+  }
+  .home-page-bottom-buttons{
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    height:21vh;
+    .left-button, .right-button{
+      width: calc(50% - 20px);
+      position: absolute;
+      font-size: 7vh;
+      text-align: center;
+      line-height: 21vh;
+      color: $orange-dark;
+    }
+    .left-button{
+      display:inline-block;
+      border: solid 1px #F3941C;
+      border-top-right-radius: 100px;
+      border-bottom-right-radius: 100px;
+      left: -1px;
+    }
+    .right-button{
+      display:inline-block;
+      border: solid 1px #F3941C;
+      border-top-left-radius: 100px;
+      border-bottom-left-radius: 100px;
+      right: -1px;
+    }
+  }
+}
+.fallSpin {
+  position: absolute;
+  -webkit-animation: fallSpin 60s infinite  normal ease-out;
+  animation: fallSpin 60s infinite  normal ease-out;
+}
+@-webkit-keyframes fallSpin {
+  0% {
+    top:-100px;
+    @include transform(rotate(0deg));
+  }
+  100% {
+    top: 500px;
+    @include transform(rotate(270deg));
+  }
+}
+@keyframes fallSpin {
+  0% {
+    top: -100px;
+  }
+  100% {
+    top: 500px;
+    @include transform(rotate(270deg));
+  }
+}

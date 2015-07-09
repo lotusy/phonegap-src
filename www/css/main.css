@@ -1,0 +1,231 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: AmaticSC;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: Aleo;
+  src: url(../../assets/fonts/Aleo/Aleo-Regular.otf); }
+@font-face {
+  font-family: Aleo;
+  src: url(../../assets/fonts/Aleo/Aleo-Bold.otf);
+  font-weight: bold; }
+@font-face {
+  font-family: AmaticSC;
+  src: url(../../assets/fonts/Amatic_SC/AmaticSC-Regular.ttf); }
+@font-face {
+  font-family: AmaticSC;
+  src: url(../../assets/fonts/Amatic_SC/AmaticSC-Bold.ttf);
+  font-weight: bold; }
+.vertical-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.navbar {
+  height: 40px;
+  width: 100%;
+  background-color: #FEE353;
+  position: fixed;
+  box-shadow: 0 0 15px 0 black; }
+  .navbar .left-button {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-image: url(../../assets/global_assets/back_btn.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-size: 30px; }
+  .navbar .center-area {
+    height: 40px;
+    width: calc(100% - 80px);
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+    left: 40px;
+    font-size: 32px;
+    text-align: center;
+    line-height: 40px; }
+  .navbar .right-button {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    background-image: url(../../assets/global_assets/icn-global-src.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-size: 30px; }
+
+home-page {
+  z-index: 1;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(#fee76c, #fee041); }
+  home-page #falling-food-container {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0; }
+    home-page #falling-food-container .falling-food {
+      width: 8vh;
+      height: 8vh;
+      -webkit-background-size: contain;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  home-page .homepage-center {
+    top: 40%; }
+    home-page .homepage-center .profile-picture-container {
+      background-color: #FEDC28;
+      -webkit-box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.3);
+      box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.3);
+      height: 18vh;
+      width: 18vh;
+      border-radius: 50%;
+      margin: 0 auto 7% auto;
+      position: relative; }
+      home-page .homepage-center .profile-picture-container .profile-picture {
+        height: calc(100% - 10px);
+        width: calc(100% - 10px);
+        border-radius: inherit;
+        margin: 0px auto;
+        background-image: url(../../assets/home_screen/profile-default.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain; }
+      home-page .homepage-center .profile-picture-container .profile-rank {
+        background-image: url(../../assets/global_assets/bunlevel1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 6vh;
+        height: 6vh;
+        position: absolute;
+        bottom: -0.5vh;
+        right: -0.5vh; }
+    home-page .homepage-center .dishes-tried {
+      margin-bottom: 7%; }
+      home-page .homepage-center .dishes-tried h1 {
+        font-size: 16vh;
+        text-align: center;
+        color: #734521;
+        font-weight: normal; }
+      home-page .homepage-center .dishes-tried h2 {
+        font-family: Aleo;
+        color: #F7B74F;
+        font-size: 3vh;
+        text-align: center;
+        font-weight: normal; }
+    home-page .homepage-center .add-dishes .swiper {
+      background-color: rgba(0, 128, 0, 0.3);
+      width: 100%;
+      height: 10vh; }
+    home-page .homepage-center .add-dishes h2 {
+      font-family: Aleo;
+      font-weight: normal;
+      text-align: center;
+      color: #F7B74F;
+      font-size: 3vh; }
+  home-page .home-page-bottom-buttons {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    height: 21vh; }
+    home-page .home-page-bottom-buttons .left-button, home-page .home-page-bottom-buttons .right-button {
+      width: calc(50% - 20px);
+      position: absolute;
+      font-size: 7vh;
+      text-align: center;
+      line-height: 21vh;
+      color: #F3941C; }
+    home-page .home-page-bottom-buttons .left-button {
+      display: inline-block;
+      border: solid 1px #F3941C;
+      border-top-right-radius: 100px;
+      border-bottom-right-radius: 100px;
+      left: -1px; }
+    home-page .home-page-bottom-buttons .right-button {
+      display: inline-block;
+      border: solid 1px #F3941C;
+      border-top-left-radius: 100px;
+      border-bottom-left-radius: 100px;
+      right: -1px; }
+
+.fallSpin, home-page #falling-food-container .falling-food {
+  position: absolute;
+  -webkit-animation: fallSpin 60s infinite  normal ease-out;
+  animation: fallSpin 60s infinite  normal ease-out; }
+
+@-webkit-keyframes fallSpin {
+  0% {
+    top: -100px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    top: 500px;
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg); } }
+@keyframes fallSpin {
+  0% {
+    top: -100px; }
+  100% {
+    top: 500px;
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg); } }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,38 @@
+@font-face {
+  font-family: Aleo;
+  src: url(../../assets/fonts/Aleo/Aleo-Regular.otf);
+}
+@font-face {
+  font-family: Aleo;
+  src: url(../../assets/fonts/Aleo/Aleo-Bold.otf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: AmaticSC;
+  src: url(../../assets/fonts/Amatic_SC/AmaticSC-Regular.ttf);
+}
+@font-face {
+  font-family: AmaticSC;
+  src: url(../../assets/fonts/Amatic_SC/AmaticSC-Bold.ttf);
+  font-weight: bold;
+}
+
+// COLORS
+$yellow-light: #FEE353;
+$yellow-medium: #FEDC28;
+$yellow-dark: #FDD520;
+
+$orange-light: #F7B74F;
+$orange-medium: #F5A623;
+$orange-dark: #F3941C;
+
+$brown-light: #A27854;
+$brown-medium: #8B572A;
+$brown-dark: #734521;
+
+$grey-white: #F7F7F7;
+$grey-light: #D9D9D9;
+$grey-medium: #A6A6A6;
+$grey-dark: #757575;
+
+$dev-green: rgba(green, 0.3);
