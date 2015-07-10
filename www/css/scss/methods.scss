@@ -4,6 +4,12 @@
   background-position: center;
   background-size: contain;
 }
+@mixin backgroundify($url) {
+  background-image: $url;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 @mixin transform($transformation){
   -webkit-transform: $transformation;
   -moz-transform: $transformation;
@@ -15,4 +21,10 @@
   -webkit-box-shadow: $args;
   -moz-box-shadow: $args;
   box-shadow: $args;
+}
+@mixin animation($args){
+  -webkit-animation: $args;
+  -moz-animation: $args;
+  -o-animation: $args;
+  animation: $args;
 }

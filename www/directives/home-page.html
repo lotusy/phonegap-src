@@ -11,7 +11,13 @@
         <h2>woot!</h2>
     </div>
     <div class="add-dishes">
-        <div class="swiper"></div>
+        <div class="swiper" ng-swipe-right="swipedAddDish()">
+            <div id="pacman" ng-class="swiped ? 'pacman-eat' : ''"></div>
+            <div class="beads" ng-hide="beadEaten > 1"></div>
+            <div class="beads" ng-hide="beadEaten > 2"></div>
+            <div class="beads" ng-hide="beadEaten > 3"></div>
+            <div class="beads" ng-hide="beadEaten > 4"></div>
+        </div>
         <h2>Swipe to add a dish you tried >></h2>
     </div>
 </div>

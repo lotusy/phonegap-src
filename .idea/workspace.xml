@@ -1,7 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/www/css/scss/homepage.scss" line="165" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3b18bfc-6862-4bb5-b80c-7759aaa22cc9" name="Default" comment="" />
+    <list default="true" id="e3b18bfc-6862-4bb5-b80c-7759aaa22cc9" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/js/HomeController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/js/NewItemModuleController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/directives/new-item-module.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/css/scss/newitemmodule.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/.sass-cache/56ba32f2e8f83b6bcb07cd4986880fbb2f2c7fce/homepage.scssc" afterPath="$PROJECT_DIR$/www/.sass-cache/56ba32f2e8f83b6bcb07cd4986880fbb2f2c7fce/homepage.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/.sass-cache/56ba32f2e8f83b6bcb07cd4986880fbb2f2c7fce/methods.scssc" afterPath="$PROJECT_DIR$/www/.sass-cache/56ba32f2e8f83b6bcb07cd4986880fbb2f2c7fce/methods.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/.sass-cache/56ba32f2e8f83b6bcb07cd4986880fbb2f2c7fce/navbar.scssc" afterPath="$PROJECT_DIR$/www/.sass-cache/56ba32f2e8f83b6bcb07cd4986880fbb2f2c7fce/navbar.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/.sass-cache/56ba32f2e8f83b6bcb07cd4986880fbb2f2c7fce/reset.scssc" afterPath="$PROJECT_DIR$/www/.sass-cache/56ba32f2e8f83b6bcb07cd4986880fbb2f2c7fce/reset.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/.sass-cache/56ba32f2e8f83b6bcb07cd4986880fbb2f2c7fce/scss-list.scssc" afterPath="$PROJECT_DIR$/www/.sass-cache/56ba32f2e8f83b6bcb07cd4986880fbb2f2c7fce/scss-list.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/.sass-cache/56ba32f2e8f83b6bcb07cd4986880fbb2f2c7fce/structural.scssc" afterPath="$PROJECT_DIR$/www/.sass-cache/56ba32f2e8f83b6bcb07cd4986880fbb2f2c7fce/structural.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/.sass-cache/56ba32f2e8f83b6bcb07cd4986880fbb2f2c7fce/variables.scssc" afterPath="$PROJECT_DIR$/www/.sass-cache/56ba32f2e8f83b6bcb07cd4986880fbb2f2c7fce/variables.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/MainController.js" afterPath="$PROJECT_DIR$/www/js/MainController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/bower.json" afterPath="$PROJECT_DIR$/www/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/directives/home-page.html" afterPath="$PROJECT_DIR$/www/directives/home-page.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/scss/homepage.scss" afterPath="$PROJECT_DIR$/www/css/scss/homepage.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/main.css.map" afterPath="$PROJECT_DIR$/www/css/main.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/main.css" afterPath="$PROJECT_DIR$/www/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/scss/methods.scss" afterPath="$PROJECT_DIR$/www/css/scss/methods.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/directives/nav-bar.html" afterPath="$PROJECT_DIR$/www/directives/nav-bar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/scss/navbar.scss" afterPath="$PROJECT_DIR$/www/css/scss/navbar.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/scss/reset.scss" afterPath="$PROJECT_DIR$/www/css/scss/reset.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/scss/scss-list.scss" afterPath="$PROJECT_DIR$/www/css/scss/scss-list.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/scss/structural.scss" afterPath="$PROJECT_DIR$/www/css/scss/structural.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/scss/variables.scss" afterPath="$PROJECT_DIR$/www/css/scss/variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="Foodster.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,8 +60,68 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/www/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-26.153847" vertical-offset="0" max-vertical-offset="1088">
-                  <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
+                <state vertical-scroll-proportion="-18.961538" vertical-offset="0" max-vertical-offset="1258">
+                  <caret line="29" column="106" selection-start-line="29" selection-start-column="106" selection-end-line="29" selection-end-column="106" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="nav-bar.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/www/directives/nav-bar.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="170">
+                  <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="bower.json" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/www/bower.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-13.730769" vertical-offset="0" max-vertical-offset="561">
+                  <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="NewItemModuleController.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/www/js/NewItemModuleController.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
+                  <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="new-item-module.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/www/directives/new-item-module.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.11007194" vertical-offset="0" max-vertical-offset="1390">
+                  <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="MainController.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/www/js/MainController.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
+                  <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="HomeController.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/www/js/HomeController.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
+                  <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -39,18 +130,8 @@
           <file leaf-file-name="home-page.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/www/directives/home-page.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="442">
-                  <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="MainController.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/www/js/MainController.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.29080543" vertical-offset="0" max-vertical-offset="1403">
-                  <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+                <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="544">
+                  <caret line="1" column="31" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="31" />
                   <folding />
                 </state>
               </provider>
@@ -63,8 +144,8 @@
           <file leaf-file-name="methods.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/www/css/scss/methods.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="391">
-                  <caret line="14" column="27" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="27" />
+                <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="595">
+                  <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
                   <folding />
                 </state>
               </provider>
@@ -73,8 +154,18 @@
           <file leaf-file-name="homepage.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/www/css/scss/homepage.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.06115108" vertical-offset="0" max-vertical-offset="2312">
-                  <caret line="5" column="82" selection-start-line="5" selection-start-column="82" selection-end-line="5" selection-end-column="82" />
+                <state vertical-scroll-proportion="0.47887325" vertical-offset="816" max-vertical-offset="3706">
+                  <caret line="86" column="17" selection-start-line="86" selection-start-column="17" selection-end-line="86" selection-end-column="17" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/www/css/main.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-8.947369" vertical-offset="7276" max-vertical-offset="7888">
+                  <caret line="458" column="0" selection-start-line="458" selection-start-column="0" selection-end-line="458" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -83,8 +174,8 @@
           <file leaf-file-name="structural.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/www/css/scss/structural.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="170">
-                  <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+                <state vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="357">
+                  <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
@@ -93,8 +184,18 @@
           <file leaf-file-name="scss-list.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/www/css/scss/scss-list.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="187">
-                  <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+                <state vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="204">
+                  <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="newitemmodule.scss" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/www/css/scss/newitemmodule.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-25.5" vertical-offset="0" max-vertical-offset="1734">
+                  <caret line="39" column="27" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
                   <folding />
                 </state>
               </provider>
@@ -103,18 +204,8 @@
           <file leaf-file-name="variables.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/www/css/scss/variables.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="731">
-                  <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="navbar.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/www/css/scss/navbar.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="646">
-                  <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+                <state vertical-scroll-proportion="-25.5" vertical-offset="0" max-vertical-offset="782">
+                  <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
                   <folding />
                 </state>
               </provider>
@@ -123,8 +214,8 @@
           <file leaf-file-name="reset.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/www/css/scss/reset.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-14.384615" vertical-offset="0" max-vertical-offset="901">
-                  <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+                <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="986">
+                  <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
                   <folding />
                 </state>
               </provider>
@@ -134,25 +225,35 @@
       </split-second>
     </splitter>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/www/css/Gruntfile.js" />
         <option value="$PROJECT_DIR$/www/Gruntfile.js" />
         <option value="$PROJECT_DIR$/www/package.json" />
-        <option value="$PROJECT_DIR$/www/css/main.css" />
         <option value="$PROJECT_DIR$/www/js/bower.json" />
         <option value="$PROJECT_DIR$/www/assets/New item tried screen/desktop.ini" />
-        <option value="$PROJECT_DIR$/www/directives/nav-bar.html" />
-        <option value="$PROJECT_DIR$/www/css/scss/navbar.scss" />
-        <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/www/css/scss/scss-list.scss" />
-        <option value="$PROJECT_DIR$/www/css/scss/structural.scss" />
-        <option value="$PROJECT_DIR$/www/css/scss/methods.scss" />
-        <option value="$PROJECT_DIR$/www/css/scss/variables.scss" />
-        <option value="$PROJECT_DIR$/www/css/scss/reset.scss" />
+        <option value="$PROJECT_DIR$/www/bower.json" />
         <option value="$PROJECT_DIR$/www/directives/home-page.html" />
+        <option value="$PROJECT_DIR$/www/js/HomeController.js" />
+        <option value="$PROJECT_DIR$/www/scss/homepage.scss" />
+        <option value="$PROJECT_DIR$/www/scss/variables.scss" />
+        <option value="$PROJECT_DIR$/www/js/NewItemModuleController.js" />
+        <option value="$PROJECT_DIR$/www/directives/nav-bar.html" />
+        <option value="$PROJECT_DIR$/www/css/scss/variables.scss" />
+        <option value="$PROJECT_DIR$/www/css/scss/navbar.scss" />
+        <option value="$PROJECT_DIR$/www/css/scss/methods.scss" />
+        <option value="$PROJECT_DIR$/www/css/scss/structural.scss" />
+        <option value="$PROJECT_DIR$/www/index.html" />
+        <option value="$PROJECT_DIR$/www/css/scss/reset.scss" />
         <option value="$PROJECT_DIR$/www/js/MainController.js" />
+        <option value="$PROJECT_DIR$/www/css/main.css" />
+        <option value="$PROJECT_DIR$/www/directives/new-item-module.html" />
+        <option value="$PROJECT_DIR$/www/css/scss/newitemmodule.scss" />
         <option value="$PROJECT_DIR$/www/css/scss/homepage.scss" />
       </list>
     </option>
@@ -166,7 +267,7 @@
     <option name="width" value="2576" />
     <option name="height" value="1576" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -304,10 +405,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/Applications/Git/bin/git.exe" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="preferences.lookFeel" />
+    <property name="options.lastSelected" value="vcs.Git" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
@@ -317,6 +418,7 @@
       <recent name="D:\Development\Foodster\www\assets\fonts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Development\Foodster\www\css" />
       <recent name="D:\Development\Foodster\www" />
     </key>
   </component>
@@ -381,7 +483,7 @@
     <frame x="-8" y="-8" width="2576" height="1576" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963988" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -438,98 +540,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1037" max-vertical-offset="1173">
-          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2057">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/bower.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="544">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/directives/nav-bar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="170">
-          <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-26.153847" vertical-offset="0" max-vertical-offset="1088">
-          <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/css/scss/methods.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="391">
-          <caret line="14" column="27" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/css/scss/variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="731">
-          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/css/scss/navbar.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="646">
-          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/css/scss/reset.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.384615" vertical-offset="0" max-vertical-offset="901">
-          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/css/scss/scss-list.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="187">
-          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/css/scss/structural.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="170">
-          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/directives/home-page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="442">
-          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -542,18 +556,138 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/css/scss/homepage.scss">
+    <entry file="file://$PROJECT_DIR$/www/directives/home-page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06115108" vertical-offset="0" max-vertical-offset="2312">
-          <caret line="5" column="82" selection-start-line="5" selection-start-column="82" selection-end-line="5" selection-end-column="82" />
+        <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="544">
+          <caret line="1" column="31" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/css/scss/scss-list.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="204">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/HomeController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/css/scss/navbar.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31798562" vertical-offset="0" max-vertical-offset="1390">
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/css/scss/variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-25.5" vertical-offset="0" max-vertical-offset="782">
+          <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/css/scss/methods.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="595">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/css/scss/structural.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="357">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/directives/nav-bar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="170">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.730769" vertical-offset="0" max-vertical-offset="561">
+          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.961538" vertical-offset="0" max-vertical-offset="1258">
+          <caret line="29" column="106" selection-start-line="29" selection-start-column="106" selection-end-line="29" selection-end-column="106" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/css/scss/reset.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="986">
+          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/NewItemModuleController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/MainController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29080543" vertical-offset="0" max-vertical-offset="1403">
-          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
+          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.947369" vertical-offset="7276" max-vertical-offset="7888">
+          <caret line="458" column="0" selection-start-line="458" selection-start-column="0" selection-end-line="458" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/directives/new-item-module.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11007194" vertical-offset="0" max-vertical-offset="1390">
+          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/css/scss/newitemmodule.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-25.5" vertical-offset="0" max-vertical-offset="1734">
+          <caret line="39" column="27" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/css/scss/homepage.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47887325" vertical-offset="816" max-vertical-offset="3706">
+          <caret line="86" column="17" selection-start-line="86" selection-start-column="17" selection-end-line="86" selection-end-column="17" />
           <folding />
         </state>
       </provider>

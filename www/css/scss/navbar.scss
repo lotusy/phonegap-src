@@ -1,30 +1,30 @@
 .navbar{
-  height:40px;
+  height:$navbar-height;
   width:100%;
   background-color: $yellow-light;
   position: fixed;
   box-shadow: 0 0 15px 0 black;
   .left-button{
-    width:40px;
-    height: 40px;
+    width:$navbar-height;
+    height: $navbar-height;
     position: absolute;
     @include iconify(url(../../assets/global_assets/back_btn.png));
     background-size: 30px;
   }
   .center-area{
-    height: 40px;
+    height: $navbar-height;
     width: calc(100% - 80px);
     position: absolute;
     margin: 0 auto;
     top: 0;
-    left: 40px;
+    left: $navbar-height;
     font-size: 32px;
     text-align: center;
-    line-height: 40px;
+    line-height: $navbar-height;
   }
   .right-button{
-    width:40px;
-    height: 40px;
+    width:$navbar-height;
+    height: $navbar-height;
     position: absolute;
     right: 0;
     @include iconify(url(../../assets/global_assets/icn-global-src.png));

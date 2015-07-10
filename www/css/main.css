@@ -20,15 +20,20 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font-family: AmaticSC;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+  position: relative; }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
 
+html {
+  height: 100%; }
+
 body {
-  line-height: 1; }
+  line-height: 1;
+  height: 100%; }
 
 ol, ul {
   list-style: none; }
@@ -59,20 +64,29 @@ table {
   font-family: AmaticSC;
   src: url(../../assets/fonts/Amatic_SC/AmaticSC-Bold.ttf);
   font-weight: bold; }
+nav-bar {
+  position: fixed;
+  z-index: 1; }
+
+.module {
+  top: 50px;
+  position: relative;
+  z-index: 0; }
+
 .vertical-center {
   position: relative;
   top: 50%;
   transform: translateY(-50%); }
 
 .navbar {
-  height: 40px;
+  height: 50px;
   width: 100%;
   background-color: #FEE353;
   position: fixed;
   box-shadow: 0 0 15px 0 black; }
   .navbar .left-button {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     position: absolute;
     background-image: url(../../assets/global_assets/back_btn.png);
     background-repeat: no-repeat;
@@ -80,18 +94,18 @@ table {
     background-size: contain;
     background-size: 30px; }
   .navbar .center-area {
-    height: 40px;
+    height: 50px;
     width: calc(100% - 80px);
     position: absolute;
     margin: 0 auto;
     top: 0;
-    left: 40px;
+    left: 50px;
     font-size: 32px;
     text-align: center;
-    line-height: 40px; }
+    line-height: 50px; }
   .navbar .right-button {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     position: absolute;
     right: 0;
     background-image: url(../../assets/global_assets/icn-global-src.png);
@@ -111,7 +125,13 @@ home-page {
     width: 100%;
     position: fixed;
     top: 0;
-    left: 0; }
+    left: 0;
+    background-image: url(../../assets/home_screen/Home-foodbg.png);
+    background-size: 100%;
+    -webkit-animation: scrolling-bg 30s linear infinite;
+    -moz-animation: scrolling-bg 30s linear infinite;
+    -o-animation: scrolling-bg 30s linear infinite;
+    animation: scrolling-bg 30s linear infinite; }
     home-page #falling-food-container .falling-food {
       width: 8vh;
       height: 8vh;
@@ -163,9 +183,43 @@ home-page {
         text-align: center;
         font-weight: normal; }
     home-page .homepage-center .add-dishes .swiper {
-      background-color: rgba(0, 128, 0, 0.3);
-      width: 100%;
-      height: 10vh; }
+      background-color: white;
+      border-radius: 100px;
+      width: 60%;
+      height: 6vh;
+      margin: 0 auto 10px auto;
+      position: relative; }
+    home-page .homepage-center .add-dishes #pacman {
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute;
+      height: 9vh;
+      width: 9vh;
+      left: calc(0% - 15px);
+      background-image: url(../../assets/home_screen/pacman1.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain; }
+    home-page .homepage-center .add-dishes .beads {
+      top: 50%;
+      transform: translateY(-50%);
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      width: 2vh;
+      height: 2vh; }
+      home-page .homepage-center .add-dishes .beads:nth-child(2) {
+        left: 20%;
+        background-image: url(../../assets/home_screen/pea.png); }
+      home-page .homepage-center .add-dishes .beads:nth-child(3) {
+        left: 40%;
+        background-image: url(../../assets/home_screen/pea2.png); }
+      home-page .homepage-center .add-dishes .beads:nth-child(4) {
+        left: 60%;
+        background-image: url(../../assets/home_screen/pea.png); }
+      home-page .homepage-center .add-dishes .beads:nth-child(5) {
+        left: 80%;
+        background-image: url(../../assets/home_screen/pea2.png); }
     home-page .homepage-center .add-dishes h2 {
       font-family: Aleo;
       font-weight: normal;
@@ -178,25 +232,79 @@ home-page {
     width: 100%;
     height: 21vh; }
     home-page .home-page-bottom-buttons .left-button, home-page .home-page-bottom-buttons .right-button {
-      width: calc(50% - 20px);
+      display: inline-block;
+      width: calc(50% - 30px);
       position: absolute;
       font-size: 7vh;
-      text-align: center;
       line-height: 21vh;
-      color: #F3941C; }
+      color: #F3941C;
+      background-size: cover;
+      background-repeat: no-repeat; }
     home-page .home-page-bottom-buttons .left-button {
-      display: inline-block;
-      border: solid 1px #F3941C;
-      border-top-right-radius: 100px;
-      border-bottom-right-radius: 100px;
-      left: -1px; }
+      text-align: left;
+      background-image: url(../../assets/home_screen/home-discover-bg.png);
+      background-position: right;
+      left: 0;
+      padding-left: 25px; }
     home-page .home-page-bottom-buttons .right-button {
-      display: inline-block;
-      border: solid 1px #F3941C;
-      border-top-left-radius: 100px;
-      border-bottom-left-radius: 100px;
-      right: -1px; }
+      text-align: right;
+      background-image: url(../../assets/home_screen/home-hitlist-bg.png);
+      background-position: left;
+      right: 0;
+      padding-right: 25px; }
+  home-page .pacman-eat {
+    position: absolute;
+    left: 85%;
+    -webkit-animation: nom 0.8s normal linear forwards;
+    animation: nom 0.8s normal linear forwards; }
+  home-page.ng-hide-add {
+    -webkit-animation: slideOutRight 0.2s linear;
+    -moz-animation: slideOutRight 0.2s linear;
+    -o-animation: slideOutRight 0.2s linear;
+    animation: slideOutRight 0.2s linear; }
+  home-page.ng-hide-remove {
+    -webkit-animation: slideInRight 0.2s linear;
+    -moz-animation: slideInRight 0.2s linear;
+    -o-animation: slideInRight 0.2s linear;
+    animation: slideInRight 0.2s linear; }
 
+@-webkit-keyframes scrolling-bg {
+  from {
+    background-position-y: 100%; }
+  to {
+    background-position-y: 0%; } }
+@-webkit-keyframes nom {
+  0% {
+    left: calc(0% - 15px);
+    background-image: url(../../assets/home_screen/pacman1.png); }
+  25% {
+    left: calc(20% - 15px);
+    background-image: url(../../assets/home_screen/pacman2.png); }
+  50% {
+    left: calc(40% - 15px);
+    background-image: url(../../assets/home_screen/pacman1.png); }
+  75% {
+    left: calc(60% - 15px);
+    background-image: url(../../assets/home_screen/pacman2.png); }
+  100% {
+    left: calc(90% - 15px);
+    background-image: url(../../assets/home_screen/pacman1.png); } }
+@keyframes nom {
+  0% {
+    left: calc(0% - 15px);
+    background-image: url(../../assets/home_screen/pacman1.png); }
+  25% {
+    left: calc(20% - 15px);
+    background-image: url(../../assets/home_screen/pacman2.png); }
+  50% {
+    left: calc(40% - 15px);
+    background-image: url(../../assets/home_screen/pacman1.png); }
+  75% {
+    left: calc(60% - 15px);
+    background-image: url(../../assets/home_screen/pacman2.png); }
+  100% {
+    left: calc(90% - 15px);
+    background-image: url(../../assets/home_screen/pacman1.png); } }
 .fallSpin, home-page #falling-food-container .falling-food {
   position: absolute;
   -webkit-animation: fallSpin 60s infinite  normal ease-out;
@@ -227,5 +335,124 @@ home-page {
     -ms-transform: rotate(270deg);
     -o-transform: rotate(270deg);
     transform: rotate(270deg); } }
+@keyframes full-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg); } }
+@-webkit-keyframes full-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg); } }
+new-item-module .search-bar-container {
+  background-image: url(../../assets/new_item_tried_screen/img-city.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100px; }
+  new-item-module .search-bar-container .search-bar {
+    text-align: center;
+    top: 45%;
+    transform: translateY(-50%);
+    position: relative; }
+    new-item-module .search-bar-container .search-bar .fa-search {
+      position: absolute;
+      line-height: 40px;
+      margin-left: 15px;
+      color: #A6A6A6; }
+    new-item-module .search-bar-container .search-bar input {
+      width: 70%;
+      border: none;
+      line-height: 40px;
+      padding-left: 45px;
+      padding-right: 20px;
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.9); }
+new-item-module .no-location {
+  height: calc(100% - (50px + 180px));
+  box-shadow: 0 0 10px 0 #757575; }
+  new-item-module .no-location > div {
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+    text-align: center; }
+    new-item-module .no-location > div h2 {
+      font-size: 10vw;
+      line-height: 140%;
+      font-weight: normal; }
+    new-item-module .no-location > div .lost-image {
+      background-image: url(../../assets/new_item_tried_screen/bun-meh.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      height: 20vh;
+      margin: 20px auto;
+      width: 30vh; }
+new-item-module .new-item-module-progress-container {
+  height: 80px;
+  width: 100%;
+  z-index: 1; }
+  new-item-module .new-item-module-progress-container .new-item-module-progress {
+    width: 90%;
+    position: relative;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%); }
+    new-item-module .new-item-module-progress-container .new-item-module-progress > div {
+      display: inline-block; }
+    new-item-module .new-item-module-progress-container .new-item-module-progress .progress-icon {
+      width: 40px;
+      height: 40px;
+      vertical-align: bottom; }
+      new-item-module .new-item-module-progress-container .new-item-module-progress .progress-icon.locate {
+        background-image: url(../../assets/new_item_tried_screen/nav-place1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain; }
+      new-item-module .new-item-module-progress-container .new-item-module-progress .progress-icon.pick {
+        background-image: url(../../assets/new_item_tried_screen/nav-item1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain; }
+        new-item-module .new-item-module-progress-container .new-item-module-progress .progress-icon.pick.activated {
+          background-image: url(../../assets/new_item_tried_screen/nav-item2.png);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain; }
+      new-item-module .new-item-module-progress-container .new-item-module-progress .progress-icon.like {
+        background-image: url(../../assets/new_item_tried_screen/nav-opinion1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain; }
+        new-item-module .new-item-module-progress-container .new-item-module-progress .progress-icon.like.activated {
+          background-image: url(../../assets/new_item_tried_screen/nav-opinion2.png);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain; }
+    new-item-module .new-item-module-progress-container .new-item-module-progress .progress-line {
+      background-image: url(../../assets/new_item_tried_screen/nav-line1.png);
+      background-repeat: repeat-x;
+      width: calc(50% - 65px);
+      height: 5px;
+      background-size: 100%;
+      margin-bottom: 6px; }
 
 /*# sourceMappingURL=main.css.map */
