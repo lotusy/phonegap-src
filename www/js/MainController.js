@@ -10,6 +10,7 @@ Foodster.directive('homePage', function() {return {templateUrl: 'directives/home
 Foodster.directive('newItemModule', function() {return {templateUrl: 'directives/new-item-module.html',controller:'NewItemModuleController'};});
 
 Foodster.controller('MainController', ['$scope', '$rootScope', '$http', function($scope, $rootScope, $http){
+    //$rootScope.ActiveModule = 'NEWITEMMODULE';
     $rootScope.ActiveModule = 'HOME';
     $rootScope.PreviousModule = [];
 

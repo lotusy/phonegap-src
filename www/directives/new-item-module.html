@@ -1,15 +1,24 @@
 <div class="search-bar-container">
     <div class="search-bar">
         <i class="fa fa-search"></i>
-        <input type="text" placeholder="Search or enter restaurant name"/>
+        <input type="text" placeholder="Search or enter restaurant name" ng-model="searchTerms"/>
     </div>
 </div>
-<div class="no-location">
+<div class="no-location" ng-hide="true">
     <div>
         <h2>TURN ON LOCATION ACCESS TO EASILY</h2>
         <h2>LOCATE RESTAURANTS NEAR YOU</h2>
         <div class="lost-image"></div>
         <p>Where are you..</p>
+    </div>
+</div>
+<div class="nearby-restaurants-list">
+    <h2>Is it any of these nearby restaurants?</h2>
+    <div class="list-container">
+        <div class="restaurant-listing" ng-repeat="restaurant in nearbyRestaurants | filter:searchTerms track by restaurant.distance">
+            <div class="name">{{restaurant.name}}</div>
+            <div class="type"><i>{{restaurant.type}}</i></div>
+        </div>
     </div>
 </div>
 <div class="new-item-module-progress-container">

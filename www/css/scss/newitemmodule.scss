@@ -2,7 +2,7 @@ new-item-module {
   .search-bar-container {
     @include backgroundify(url(../../assets/new_item_tried_screen/img-city.png));
     width: 100%;
-    height: 100px;
+    height: 120px;
     .search-bar {
       text-align: center;
       top: 45%;
@@ -23,6 +23,44 @@ new-item-module {
         padding-right: 20px;
         border-radius: 5px;
         background-color: rgba(255, 255, 255, 0.9);
+      }
+    }
+  }
+  .nearby-restaurants-list{
+    height: calc(100% - (#{$navbar-height} + 180px + 20px));
+    box-shadow: 0 0 10px 0 $grey-dark;
+    color: $grey-dark;
+    h2{
+      font-weight: normal;
+      padding: 5px 3%;
+      z-index: 1;
+      line-height: 20px;
+    }
+    .list-container{
+      height: calc(100% - 30px);
+      overflow: auto;
+      .restaurant-listing{
+        margin: 0 10px;
+        border-bottom: solid 1px $grey-light;
+        .name, .type{
+          display: inline-block;
+          line-height: 300%;
+          vertical-align: top;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+        }
+        .name{
+          display: inline-block;
+          line-height: 300%;
+          vertical-align: top;
+          width: calc(70% - 5px);
+        }
+        .type{
+          width: 30%;
+          text-align: right;
+          color: $grey-light;
+        }
       }
     }
   }
@@ -90,6 +128,8 @@ new-item-module {
         height: 5px;
         background-size: 100%;
         margin-bottom: 6px;
+        margin-left: -5px;
+        margin-right: -5px;
 
       }
     }
