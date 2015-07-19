@@ -1,10 +1,4 @@
-<div class="search-bar-container">
-    <div class="search-bar">
-        <i class="fa fa-search"></i>
-        <input type="text" placeholder="Search or enter restaurant name" ng-model="searchTerms"/>
-    </div>
-</div>
-<div class="no-location" ng-hide="true">
+<div class="no-location" ng-show="nearbyRestaurants == 'NOLOCATION'">
     <div>
         <h2>TURN ON LOCATION ACCESS TO EASILY</h2>
         <h2>LOCATE RESTAURANTS NEAR YOU</h2>
@@ -12,21 +6,62 @@
         <p>Where are you..</p>
     </div>
 </div>
-<div class="nearby-restaurants-list">
+<div class="mid-section" ng-show="nearbyRestaurants != 'NOLOCATION' && restaurant == null">
+    <div class="search-bar-container">
+        <div class="search-bar">
+            <i class="fa fa-search"></i>
+            <input type="text" placeholder="Search or enter restaurant name" ng-model="searchTerms"/>
+        </div>
+    </div>
     <h2>Is it any of these nearby restaurants?</h2>
     <div class="list-container">
-        <div class="restaurant-listing" ng-repeat="restaurant in nearbyRestaurants | filter:searchTerms track by restaurant.distance">
+        <div class="restaurant-listing" ng-repeat="restaurant in nearbyRestaurants | filter:searchTerms | orderBy:'distance' track by $index"
+                ng-click="selectRestaurant($index)">
             <div class="name">{{restaurant.name}}</div>
             <div class="type"><i>{{restaurant.type}}</i></div>
         </div>
     </div>
 </div>
+
+<div class="mid-section" ng-show="restaurant != null && dish == null">
+    <h2>Which item did you try at {{restaurant.name}}?</h2>
+    <div class="food-container">
+        <div class="food-listing" ng-repeat="food in restaurant.dishes track by $index">
+            <div class="picture-container" ng-click="selectDish(food)">
+                <div class="no-picture">
+                    <div class="need-photo">
+                        <div>
+                            <P>NEED</P>
+                            <P>PHOTO</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="picture"></div>
+            </div>
+            <div class="name">{{food.name}}</div>
+        </div>
+        <div class="food-listing">
+            <div class="picture-container add-item" ng-if="showAddItem">
+                <div class="no-picture">
+                    <div class="need-photo">
+                        <div>
+                            <P>ADD ITEM</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mid-section" ng-show="dish != null">
+
+</div>
 <div class="new-item-module-progress-container">
     <div class="new-item-module-progress">
         <div class="progress-icon locate"></div>
-        <div class="progress-line"></div>
-        <div class="progress-icon pick"></div>
-        <div class="progress-line"></div>
-        <div class="progress-icon like"></div>
+        <div class="progress-line"      ng-class="restaurant ? 'activated' : ''"></div>
+        <div class="progress-icon pick" ng-class="restaurant ? 'activated' : ''"></div>
+        <div class="progress-line"      ng-class="dish ? 'activated' : ''"></div>
+        <div class="progress-icon like" ng-class="dish ? 'activated' : ''"></div>
     </div>
 </div>

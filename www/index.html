@@ -37,6 +37,8 @@
 
         <!-- CONTROLLERS -->
         <script src="js/MainController.js"></script>
+        <script src="js/services/FoodItemService.js"></script>
+        <script src="js/services/RestaurantService.js"></script>
         <script src="js/HomeController.js"></script>
         <script src="js/NewItemModuleController.js"></script>
 
@@ -47,7 +49,7 @@
 
         <!-- MODULE DIRECTIVES -->
         <home-page ng-show="ActiveModule == 'HOME'"></home-page>
-        <new-item-module class="module" ng-show="ActiveModule == 'NEWITEMMODULE'"></new-item-module>
+        <new-item-module class="module" ng-if="ActiveModule == 'NEWITEMMODULE'"></new-item-module>
 
         <!--<div class="app">-->
             <!--<h1>PhoneGapasd</h1>-->

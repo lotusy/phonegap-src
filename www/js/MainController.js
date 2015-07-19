@@ -14,12 +14,22 @@ Foodster.controller('MainController', ['$scope', '$rootScope', '$http', function
     $rootScope.ActiveModule = 'HOME';
     $rootScope.PreviousModule = [];
 
+    $rootScope.navbarMap = {};
     $scope.LocationMap = {
         'HOME' : '',
         'NEWITEMMODULE' : 'NEW ITEM TRIED'
     };
+    $rootScope.setBack = function(module, fn){
+        if(!$rootScope.navbarMap[module])
+        $rootScope.navbarMap[module] = {};
+        $rootScope.navbarMap[module].back = fn;
+    }
     $rootScope.goBack = function(){
-        $rootScope.ActiveModule = $rootScope.PreviousModule.pop();
+        if($rootScope.navbarMap[$rootScope.ActiveModule]){
+            $rootScope.navbarMap[$rootScope.ActiveModule].back();
+        }
+        else
+            $rootScope.ActiveModule = $rootScope.PreviousModule.pop();
     };
     $rootScope.changeModule = function(module){
         $rootScope.PreviousModule.push($rootScope.ActiveModule);

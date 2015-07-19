@@ -70,8 +70,10 @@ nav-bar {
 
 .module {
   top: 50px;
-  position: relative;
-  z-index: 0; }
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: calc(100% - 50px); }
 
 .vertical-center {
   position: relative;
@@ -389,34 +391,113 @@ new-item-module .search-bar-container {
       padding-right: 20px;
       border-radius: 5px;
       background-color: rgba(255, 255, 255, 0.9); }
-new-item-module .nearby-restaurants-list {
-  height: calc(100% - (50px + 180px + 20px));
+new-item-module .mid-section {
+  height: calc(100% - 80px);
+  width: 100%;
   box-shadow: 0 0 10px 0 #757575;
-  color: #757575; }
-  new-item-module .nearby-restaurants-list h2 {
+  background-color: white;
+  color: #757575;
+  position: absolute; }
+  new-item-module .mid-section.ng-hide-add {
+    -webkit-animation: slideOutLeft 0.2s linear;
+    -moz-animation: slideOutLeft 0.2s linear;
+    -o-animation: slideOutLeft 0.2s linear;
+    animation: slideOutLeft 0.2s linear; }
+  new-item-module .mid-section.ng-hide-remove {
+    -webkit-animation: slideInRight 0.2s linear;
+    -moz-animation: slideInRight 0.2s linear;
+    -o-animation: slideInRight 0.2s linear;
+    animation: slideInRight 0.2s linear; }
+  new-item-module .mid-section h2 {
     font-weight: normal;
     padding: 5px 3%;
     z-index: 1;
     line-height: 20px; }
-  new-item-module .nearby-restaurants-list .list-container {
-    height: calc(100% - 30px);
+  new-item-module .mid-section .food-container {
+    padding: 0 10px; }
+    new-item-module .mid-section .food-container .food-listing {
+      width: calc((100% - 40px) / 3);
+      display: inline-block;
+      vertical-align: top;
+      height: calc(37vw + 15px);
+      margin: 5px; }
+      new-item-module .mid-section .food-container .food-listing.ng-enter {
+        -webkit-animation: bounceIn 1.5s linear;
+        -moz-animation: bounceIn 1.5s linear;
+        -o-animation: bounceIn 1.5s linear;
+        animation: bounceIn 1.5s linear; }
+      new-item-module .mid-section .food-container .food-listing.ng-enter-stagger, new-item-module .mid-section .food-container .food-listing.ng-leave-stagger, new-item-module .mid-section .food-container .food-listing.ng-move-stagger {
+        /* notice how we're using animation instead of transition here */
+        -webkit-animation-delay: 0.1s;
+        animation-delay: 0.1s;
+        /* yes we still need to do this too */
+        -webkit-animation-duration: 0;
+        animation-duration: 0; }
+      new-item-module .mid-section .food-container .food-listing .picture-container {
+        height: calc(100% - 60px);
+        border: solid 7px #d5d5d5;
+        border-radius: 50%; }
+        new-item-module .mid-section .food-container .food-listing .picture-container.add-item {
+          border: dashed 3px #d5d5d5; }
+          new-item-module .mid-section .food-container .food-listing .picture-container.add-item.ng-enter {
+            -webkit-animation: bounceIn 1.5s linear;
+            -moz-animation: bounceIn 1.5s linear;
+            -o-animation: bounceIn 1.5s linear;
+            animation: bounceIn 1.5s linear; }
+          new-item-module .mid-section .food-container .food-listing .picture-container.add-item .no-picture {
+            background-color: white; }
+            new-item-module .mid-section .food-container .food-listing .picture-container.add-item .no-picture .need-photo {
+              border: none; }
+        new-item-module .mid-section .food-container .food-listing .picture-container .picture, new-item-module .mid-section .food-container .food-listing .picture-container .no-picture {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          border-radius: 50%; }
+        new-item-module .mid-section .food-container .food-listing .picture-container .picture {
+          z-index: 1; }
+        new-item-module .mid-section .food-container .food-listing .picture-container .no-picture {
+          background-color: #D9D9D9;
+          z-index: 0; }
+          new-item-module .mid-section .food-container .food-listing .picture-container .no-picture .need-photo {
+            height: calc(100% - 30px);
+            border-radius: 50%;
+            border: solid 5px #d5d5d5;
+            width: calc(100% - 30px);
+            margin: 0 auto;
+            top: 50%;
+            transform: translateY(-50%); }
+            new-item-module .mid-section .food-container .food-listing .picture-container .no-picture .need-photo > div {
+              top: 50%;
+              transform: translateY(-50%);
+              text-align: center;
+              font-size: 8vw; }
+              new-item-module .mid-section .food-container .food-listing .picture-container .no-picture .need-photo > div p {
+                font-family: AmaticSC; }
+      new-item-module .mid-section .food-container .food-listing .name {
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 33px;
+        margin-top: 15px; }
+  new-item-module .mid-section .list-container {
+    height: calc(100% - 150px);
     overflow: auto; }
-    new-item-module .nearby-restaurants-list .list-container .restaurant-listing {
+    new-item-module .mid-section .list-container .restaurant-listing {
       margin: 0 10px;
       border-bottom: solid 1px #D9D9D9; }
-      new-item-module .nearby-restaurants-list .list-container .restaurant-listing .name, new-item-module .nearby-restaurants-list .list-container .restaurant-listing .type {
+      new-item-module .mid-section .list-container .restaurant-listing .name, new-item-module .mid-section .list-container .restaurant-listing .type {
         display: inline-block;
         line-height: 300%;
         vertical-align: top;
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden; }
-      new-item-module .nearby-restaurants-list .list-container .restaurant-listing .name {
+      new-item-module .mid-section .list-container .restaurant-listing .name {
         display: inline-block;
         line-height: 300%;
         vertical-align: top;
         width: calc(70% - 5px); }
-      new-item-module .nearby-restaurants-list .list-container .restaurant-listing .type {
+      new-item-module .mid-section .list-container .restaurant-listing .type {
         width: 30%;
         text-align: right;
         color: #D9D9D9; }
@@ -431,7 +512,10 @@ new-item-module .no-location {
     new-item-module .no-location > div h2 {
       font-size: 10vw;
       line-height: 140%;
-      font-weight: normal; }
+      font-weight: normal;
+      font-family: AmaticSC; }
+    new-item-module .no-location > div p {
+      font-family: AmaticSC; }
     new-item-module .no-location > div .lost-image {
       background-image: url(../../assets/new_item_tried_screen/bun-meh.png);
       background-repeat: no-repeat;
@@ -441,7 +525,9 @@ new-item-module .no-location {
       margin: 20px auto;
       width: 30vh; }
 new-item-module .new-item-module-progress-container {
+  position: fixed;
   height: 80px;
+  bottom: 0;
   width: 100%;
   z-index: 1; }
   new-item-module .new-item-module-progress-container .new-item-module-progress {
@@ -490,5 +576,7 @@ new-item-module .new-item-module-progress-container {
       margin-bottom: 6px;
       margin-left: -5px;
       margin-right: -5px; }
+      new-item-module .new-item-module-progress-container .new-item-module-progress .progress-line.activated {
+        background-image: url(../../assets/new_item_tried_screen/nav-line2.png); }
 
 /*# sourceMappingURL=main.css.map */

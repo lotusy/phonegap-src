@@ -4,8 +4,10 @@ nav-bar{
 }
 .module{
   top: $navbar-height;
-  position: relative;
+  position: absolute;
   z-index: 0;
+  width: 100%;
+  height: calc(100% - #{$navbar-height});
 }
 .vertical-center{
   position: relative;
