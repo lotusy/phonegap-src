@@ -39,6 +39,8 @@ new-item-module {
     background-color: white;
     color: $grey-dark;
     position: absolute;
+    overflow-x: hidden;
+    overflow-y: auto;
     h2{
       font-weight: normal;
       padding: 5px 3%;
@@ -47,12 +49,48 @@ new-item-module {
     }
     .food-container{
       padding: 0 10px;
-      .food-listing{;
-        width: calc((100% - 40px) / 3);
+      .food-listing{
+        width: calc((100% - 70px) / 3);
         display: inline-block;
         vertical-align: top;
-        height: calc(37vw + 15px);
-        margin: 5px;
+        height: calc(37vw - 5px);
+        margin: 10px;
+        &.like, .dislike{
+          pointer-events: none;
+          .picture-container{
+            .picture{
+              opacity: 0.5;
+            }
+          }
+        }
+        &.like, &.dislike, &.hitlist{
+          .status{
+            z-index: 3;
+            width: 10vw;
+            height: 10vw;
+            position: absolute;
+            bottom: -10px;
+            right: -10px;
+          }
+        }
+        &.like{
+          .status{
+            @include iconify(url(../../assets/new_item_tried_screen/bun-yum.png));
+          }
+        }
+        &.dislike{
+          .status{
+            @include iconify(url(../../assets/new_item_tried_screen/bun-meh.png));
+          }
+        }
+        &.hitlist{
+          .status{
+            @include iconify(url(../../assets/food_detail_screens/icn-hitlist50.png));
+            background-color: $yellow-medium;
+            border-radius: 50%;
+            background-size: 80%;
+          }
+        }
         &.ng-enter{
           @include animation(bounceIn 1.5s linear);
         }
@@ -68,7 +106,7 @@ new-item-module {
           animation-duration:0;
         }
         .picture-container{
-          height: calc(100% - 60px);
+          height: calc(100% - 50px);
           border: solid 7px darken($grey-light, 1.5);
           border-radius: 50%;
           &.add-item{
@@ -91,6 +129,9 @@ new-item-module {
           }
           .picture{
             z-index: 1;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
           }
           .no-picture{
             background-color: $grey-light;
@@ -146,6 +187,90 @@ new-item-module {
           width: 30%;
           text-align: right;
           color: $grey-light;
+        }
+      }
+    }
+    &.rating{
+      background-color: $yellow-light;
+      text-align: center;
+      .picture-container{
+        background-color: $grey-light;
+        height: 40vw;
+        width: 40vw;
+        margin: 5% auto;
+        border-radius: 50%;
+        border: solid 7px lighten($yellow-light, 20);
+        .no-picture{
+          height: 65%;
+          width: 65%;
+          margin: 0 auto;
+          border-radius: 50%;
+          top: 50%;
+          transform: translateY(-50%);
+          border: solid 7px $grey-white;
+          .content{
+            position:absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            .photo-icon{
+              @include iconify(url(../../assets/new_item_tried_screen/icn-camera.png));
+              height: 8vw;
+              width: 100%;
+            }
+            h2{
+              font-family: AmaticSC;
+              text-align: center;
+            }
+          }
+        }
+        .picture{
+          height: 100%;
+          width: 100%;
+//          background-color: grey;
+          position: absolute;
+          top: 0;
+          border-radius: 50%;
+        }
+      }
+      .text{
+        text-align: center;
+        font-family: AmaticSC;
+        width: 100%;
+        font-size: 5vw;
+        line-height: 140%;
+      }
+      .rate{
+        .meh, .yum{
+          background-color: lighten($yellow-light, 20);
+          height: 35vw;
+          width: 35vw;
+          margin: 5% 2%;
+          border-radius: 50%;
+          border: solid 7px white;
+          display: inline-block;
+          vertical-align: top;
+          .icon{
+            height: 50%;
+            width: 100%;
+          }
+          h2{
+            font-family: AmaticSC;
+          }
+          &:hover{
+            background-color: $yellow-dark;
+            border: solid 7px $orange-medium;
+          }
+        }
+        .meh{
+          .icon{
+            @include iconify(url(../../assets/new_item_tried_screen/bun-meh.png));
+          }
+        }
+        .yum{
+          .icon{
+            @include iconify(url(../../assets/new_item_tried_screen/bun-yum.png));
+          }
         }
       }
     }

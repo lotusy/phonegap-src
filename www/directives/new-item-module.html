@@ -26,9 +26,9 @@
 <div class="mid-section" ng-show="restaurant != null && dish == null">
     <h2>Which item did you try at {{restaurant.name}}?</h2>
     <div class="food-container">
-        <div class="food-listing" ng-repeat="food in restaurant.dishes track by $index">
+        <div class="food-listing" ng-repeat="food in restaurant.dishes track by $index" ng-class="getFoodStatus(food.id)">
             <div class="picture-container" ng-click="selectDish(food)">
-                <div class="no-picture">
+                <div class="no-picture" ng-if="getFoodImage(food.id).length == 0">
                     <div class="need-photo">
                         <div>
                             <P>NEED</P>
@@ -36,7 +36,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="picture"></div>
+                <div class="picture" ng-style="getFoodImage(food.id)"></div>
+                <div class="status"></div>
             </div>
             <div class="name">{{food.name}}</div>
         </div>
@@ -53,8 +54,27 @@
         </div>
     </div>
 </div>
-<div class="mid-section" ng-show="dish != null">
-
+<div class="mid-section rating" ng-show="dish != null">
+    <div class="picture-container">
+        <div class="no-picture" ng-if="!getFoodImage(dish.id)">
+            <div class="content">
+                <div class="photo-icon"></div>
+                <h2>Take a photo</h2>
+            </div>
+        </div>
+        <div class="picture" ng-style="getFoodImage(dish.id)"></div>
+    </div>
+    <h2 class="text">Did you enjoy the {{dish.name}}?</h2>
+    <div class="rate">
+        <div class="meh">
+            <div class="icon"></div>
+            <h2>Meh.</h2>
+        </div>
+        <div class="yum">
+            <div class="icon"></div>
+            <h2>Yum!</h2>
+        </div>
+    </div>
 </div>
 <div class="new-item-module-progress-container">
     <div class="new-item-module-progress">
