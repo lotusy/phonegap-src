@@ -250,12 +250,17 @@ new-item-module {
           border: solid 7px white;
           display: inline-block;
           vertical-align: top;
-          .icon{
-            height: 50%;
-            width: 100%;
-          }
-          h2{
-            font-family: AmaticSC;
+          .vertical-center{
+            height: 70%;
+            .icon{
+              height: 80%;
+              width: 100%;
+            }
+            h2{
+              font-family: AmaticSC;
+              font-size: 32px;
+              margin-top: 5px;
+            }
           }
           &:hover{
             background-color: $yellow-dark;
@@ -263,14 +268,14 @@ new-item-module {
           }
         }
         .meh{
-          .icon{
-            @include iconify(url(../../assets/new_item_tried_screen/bun-meh.png));
-          }
+            .icon{
+              @include iconify(url(../../assets/new_item_tried_screen/bun-meh.png));
+            }
         }
         .yum{
-          .icon{
-            @include iconify(url(../../assets/new_item_tried_screen/bun-yum.png));
-          }
+            .icon{
+              @include iconify(url(../../assets/new_item_tried_screen/bun-yum.png));
+            }
         }
       }
     }

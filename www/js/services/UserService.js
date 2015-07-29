@@ -1,6 +1,16 @@
-Foodster.factory('UserService', ['FoodItemService', function(FoodItemService) {
+Foodster.factory('UserService', ['FoodItemService', '$http', function(FoodItemService, $http) {
+
 
     var UserService = {};
+
+    UserService.login = function(token, type){
+        $http({method: 'POST', url: ApiUrl+'/token/auth/'+type})
+            .success(function(res){
+                response = res;
+            })
+            .error(function(err){response = err});
+    };
+
     UserService.collectedDishes = {
         102: {like: true}
     };

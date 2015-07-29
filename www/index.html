@@ -21,6 +21,7 @@
 -->
 <html ng-app="Foodster">
     <head>
+        <base href="/">
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="msapplication-tap-highlight" content="no" />
@@ -37,6 +38,7 @@
 
         <!-- CONTROLLERS -->
         <script src="js/MainController.js"></script>
+        <script src="js/LoginController.js"></script>
         <script src="js/services/FoodItemService.js"></script>
         <script src="js/services/RestaurantService.js"></script>
         <script src="js/services/UserService.js"></script>
@@ -46,10 +48,12 @@
         <title>Hello World</title>
     </head>
     <body ng-controller="MainController">
+
         <nav-bar></nav-bar>
 
         <!-- MODULE DIRECTIVES -->
-        <home-page ng-show="ActiveModule == 'HOME'"></home-page>
+        <login class="top-module" ng-if="ActiveModule == 'LOGIN'"></login>
+        <home-page ng-if="ActiveModule == 'HOME'"></home-page>
         <new-item-module class="module" ng-if="ActiveModule == 'NEWITEMMODULE'"></new-item-module>
 
         <!--<div class="app">-->

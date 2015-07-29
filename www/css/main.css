@@ -68,6 +68,15 @@ nav-bar {
   position: fixed;
   z-index: 1; }
 
+.top-module {
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: #FEDC28; }
+
 .module {
   top: 50px;
   position: absolute;
@@ -589,11 +598,15 @@ new-item-module .mid-section {
       border: solid 7px white;
       display: inline-block;
       vertical-align: top; }
-      new-item-module .mid-section.rating .rate .meh .icon, new-item-module .mid-section.rating .rate .yum .icon {
-        height: 50%;
-        width: 100%; }
-      new-item-module .mid-section.rating .rate .meh h2, new-item-module .mid-section.rating .rate .yum h2 {
-        font-family: AmaticSC; }
+      new-item-module .mid-section.rating .rate .meh .vertical-center, new-item-module .mid-section.rating .rate .yum .vertical-center {
+        height: 70%; }
+        new-item-module .mid-section.rating .rate .meh .vertical-center .icon, new-item-module .mid-section.rating .rate .yum .vertical-center .icon {
+          height: 80%;
+          width: 100%; }
+        new-item-module .mid-section.rating .rate .meh .vertical-center h2, new-item-module .mid-section.rating .rate .yum .vertical-center h2 {
+          font-family: AmaticSC;
+          font-size: 32px;
+          margin-top: 5px; }
       new-item-module .mid-section.rating .rate .meh:hover, new-item-module .mid-section.rating .rate .yum:hover {
         background-color: #FDD520;
         border: solid 7px #F5A623; }

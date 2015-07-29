@@ -23,6 +23,7 @@
     "angular": "*",
     "jquery": "~1.11.1",
     "fontawesome": "*",
-    "slick-carousel" : "*"
+    "slick-carousel" : "*",
+    "oauth-ng": "*"
   }
 }
