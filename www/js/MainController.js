@@ -10,7 +10,10 @@ var ApiUrl = 'http://'+ENV+'.'+BASEURL;
 
 var Foodster = angular.module("Foodster", ['ngAnimate', 'ngTouch'])
     .config(function($locationProvider, $httpProvider) {
-        $locationProvider.html5Mode(true).hashPrefix('!');
+        $locationProvider.html5Mode({
+            enabled: true,
+            requireBase: false
+        });
         $httpProvider.defaults.headers = {
             'Content-Type': 'application/json',
             'app-key': '9D0E7CE8711F6F1CF87704557828A16E'
@@ -26,7 +29,7 @@ Foodster.controller('MainController', ['$scope', '$rootScope', '$http', '$locati
     //$rootScope.ActiveModule = 'NEWITEMMODULE';
     //$scope.$on('$routeUpdate', function(){
     //});
-    $rootScope.ActiveModule = 'LOGIN';
+    $rootScope.ActiveModule = 'HOME';
     $rootScope.PreviousModule = [];
 
     $rootScope.navbarMap = {};

@@ -37,10 +37,10 @@ home-page {
         width: calc(100% - 10px);
         border-radius: inherit;
         margin: 0px auto;
-        @include iconify(url(../../assets/home_screen/profile-default.png));
+        @include iconify(url(../assets/home_screen/profile-default.png));
       }
       .profile-rank {
-        @include iconify(url(../../assets/global_assets/bunlevel1.png));
+        @include iconify(url(../assets/global_assets/bunlevel1.png));
         width: 6vh;
         height: 6vh;
         position: absolute;
@@ -81,7 +81,7 @@ home-page {
         height: 9vh;
         width: 9vh;
         left: calc(0% - 15px);
-        @include iconify(url(../../assets/home_screen/pacman1.png));
+        @include iconify(url(../assets/home_screen/pacman1.png));
       }
       .beads {
 //        top: 35%;
@@ -95,19 +95,19 @@ home-page {
 //        @include animation(full-spin 5s linear infinite);
         &:nth-child(2) {
           left: 20%;
-          background-image: url(../../assets/home_screen/pea.png);
+          background-image: url(../assets/home_screen/pea.png);
         }
         &:nth-child(3) {
           left: 40%;
-          background-image: url(../../assets/home_screen/pea2.png);
+          background-image: url(../assets/home_screen/pea2.png);
         }
         &:nth-child(4) {
           left: 60%;
-          background-image: url(../../assets/home_screen/pea.png);
+          background-image: url(../assets/home_screen/pea.png);
         }
         &:nth-child(5) {
           left: 80%;
-          background-image: url(../../assets/home_screen/pea2.png);
+          background-image: url(../assets/home_screen/pea2.png);
         }
       }
       h2 {
@@ -137,14 +137,14 @@ home-page {
     }
     .left-button {
       text-align: left;
-      background-image: url(../../assets/home_screen/home-discover-bg.png);
+      background-image: url(../assets/home_screen/home-discover-bg.png);
       background-position: right;
       left: 0;
       padding-left: 25px;
     }
     .right-button {
       text-align: right;
-      background-image: url(../../assets/home_screen/home-hitlist-bg.png);
+      background-image: url(../assets/home_screen/home-hitlist-bg.png);
       background-position: left;
       right: 0;
       padding-right: 25px;
@@ -168,18 +168,18 @@ home-page {
   to{background-position-y:0%}
  }
 @-webkit-keyframes nom {
-  0%  {left:calc(0% - 15px);  background-image: url(../../assets/home_screen/pacman1.png);}
-  25% {left:calc(20% - 15px);  background-image: url(../../assets/home_screen/pacman2.png);}
-  50% {left:calc(40% - 15px);  background-image: url(../../assets/home_screen/pacman1.png);}
-  75% {left:calc(60% - 15px);  background-image: url(../../assets/home_screen/pacman2.png);}
-  100%{left:calc(90% - 15px);  background-image: url(../../assets/home_screen/pacman1.png);}
+  0%  {left:calc(0% - 15px);  background-image: url(../assets/home_screen/pacman1.png);}
+  25% {left:calc(20% - 15px);  background-image: url(../assets/home_screen/pacman2.png);}
+  50% {left:calc(40% - 15px);  background-image: url(../assets/home_screen/pacman1.png);}
+  75% {left:calc(60% - 15px);  background-image: url(../assets/home_screen/pacman2.png);}
+  100%{left:calc(90% - 15px);  background-image: url(../assets/home_screen/pacman1.png);}
  }
 @keyframes nom {
-  0%  {left:calc(0% - 15px);  background-image: url(../../assets/home_screen/pacman1.png);}
-  25% {left:calc(20% - 15px);  background-image: url(../../assets/home_screen/pacman2.png);}
-  50% {left:calc(40% - 15px);  background-image: url(../../assets/home_screen/pacman1.png);}
-  75% {left:calc(60% - 15px);  background-image: url(../../assets/home_screen/pacman2.png);}
-  100%{left:calc(90% - 15px);  background-image: url(../../assets/home_screen/pacman1.png);}
+  0%  {left:calc(0% - 15px);  background-image: url(../assets/home_screen/pacman1.png);}
+  25% {left:calc(20% - 15px);  background-image: url(../assets/home_screen/pacman2.png);}
+  50% {left:calc(40% - 15px);  background-image: url(../assets/home_screen/pacman1.png);}
+  75% {left:calc(60% - 15px);  background-image: url(../assets/home_screen/pacman2.png);}
+  100%{left:calc(90% - 15px);  background-image: url(../assets/home_screen/pacman1.png);}
  }
 .fallSpin {
   position: absolute;
