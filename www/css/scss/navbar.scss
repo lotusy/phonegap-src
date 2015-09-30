@@ -1,4 +1,4 @@
-.navbar{
+.nav-bar{
   height:$navbar-height;
   width:100%;
   background-color: $yellow-light;
@@ -8,7 +8,7 @@
     width:$navbar-height;
     height: $navbar-height;
     position: absolute;
-    @include iconify(url(../../assets/global_assets/back_btn.png));
+    @include iconify(url(../assets/global_assets/back_btn.png));
     background-size: 30px;
   }
   .center-area{
@@ -28,7 +28,7 @@
     height: $navbar-height;
     position: absolute;
     right: 0;
-    @include iconify(url(../../assets/global_assets/icn-global-src.png));
+    @include iconify(url(../assets/global_assets/icn-global-src.png));
     background-size: 30px;
   }
 }

@@ -44,7 +44,9 @@
         <script src="bower_components/angular-animate/angular-animate.min.js"></script>
         <script src="bower_components/angular-touch/angular-touch.min.js"></script>
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
-
+        <script src="bower_components/hammerjs/hammer.min.js"></script>
+        <script src="bower_components/angular-gestures/gestures.min.js"></script>
+        <script src="bower_components/ngCordova/dist/ng-cordova.js"></script>
         <!-- CONTROLLERS -->
         <script src="js/MainController.js"></script>
         <script src="js/LoginController.js"></script>
@@ -56,6 +58,8 @@
         <title>Hello World</title>
     </head>
     <body ng-controller="MainController">
+        <div id="fb-root"></div>
+        <script src='bower_components/facebook-connect-plugin/index.js'></script>
         <!--<div class="app" ng-click="hide = true" ng-hide="hide">-->
             <!--<h1>Apache Cordova</h1>-->
             <!--<div id="deviceready" class="blink">-->
@@ -63,12 +67,12 @@
                 <!--<p class="event received">Device is Ready</p>-->
             <!--</div>-->
         <!--</div>-->
-        <nav-bar></nav-bar>
+        <nav-bar class="nav-bar"></nav-bar>
 
         <!-- MODULE DIRECTIVES -->
-        <login class="top-module" ng-if="ActiveModule == 'LOGIN'"></login>
-        <home-page ng-if="ActiveModule == 'HOME'"></home-page>
-        <new-item-module class="module" ng-if="ActiveModule == 'NEWITEMMODULE'"></new-item-module>
+        <login class="top-module login" ng-if="ActiveModule == 'LOGIN'"></login>
+        <home-page class="home-page" ng-if="ActiveModule == 'HOME'"></home-page>
+        <new-item-module class="module new-item-module" ng-if="ActiveModule == 'NEWITEMMODULE'"></new-item-module>
 
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>

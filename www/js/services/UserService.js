@@ -3,6 +3,11 @@ Foodster.factory('UserService', ['FoodItemService', '$http', function(FoodItemSe
 
     var UserService = {};
 
+    UserService.watchLoginChange = function() {
+
+        var _self = this;
+
+    };
     UserService.login = function(token, type){
         $http({method: 'POST', url: ApiUrl+'/token/auth/'+type})
             .success(function(res){
@@ -10,7 +15,19 @@ Foodster.factory('UserService', ['FoodItemService', '$http', function(FoodItemSe
             })
             .error(function(err){response = err});
     };
-
+    UserService.getLastName = function() {
+        var deferred = $q.defer();
+        FB.api('/me', {
+            fields: 'last_name'
+        }, function(response) {
+            if (!response || response.error) {
+                deferred.reject('Error occured');
+            } else {
+                deferred.resolve(response);
+            }
+        });
+        return deferred.promise;
+    };
     UserService.collectedDishes = {
         102: {like: true}
     };

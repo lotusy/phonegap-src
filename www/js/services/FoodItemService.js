@@ -10,7 +10,7 @@ Foodster.factory('FoodItemService', function(){
 
     FoodItemService.getImage = function(id){
         if(id == '103')
-            return '../assets/testfood.jpg';
+            return 'assets/testfood.jpg';
         else return '';
     };
     return FoodItemService;

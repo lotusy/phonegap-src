@@ -64,7 +64,7 @@ table {
   font-family: AmaticSC;
   src: url(../assets/fonts/Amatic_SC/AmaticSC-Bold.ttf);
   font-weight: bold; }
-nav-bar {
+.nav-bar {
   position: fixed;
   z-index: 1; }
 
@@ -90,22 +90,22 @@ nav-bar {
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%); }
 
-.navbar {
+.nav-bar {
   height: 50px;
   width: 100%;
   background-color: #FEE353;
   position: fixed;
   box-shadow: 0 0 15px 0 black; }
-  .navbar .left-button {
+  .nav-bar .left-button {
     width: 50px;
     height: 50px;
     position: absolute;
-    background-image: url(../../assets/global_assets/back_btn.png);
+    background-image: url(../assets/global_assets/back_btn.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     background-size: 30px; }
-  .navbar .center-area {
+  .nav-bar .center-area {
     font-family: AmaticSC;
     height: 50px;
     width: calc(100% - 80px);
@@ -116,24 +116,24 @@ nav-bar {
     font-size: 32px;
     text-align: center;
     line-height: 50px; }
-  .navbar .right-button {
+  .nav-bar .right-button {
     width: 50px;
     height: 50px;
     position: absolute;
     right: 0;
-    background-image: url(../../assets/global_assets/icn-global-src.png);
+    background-image: url(../assets/global_assets/icn-global-src.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     background-size: 30px; }
 
-home-page {
+.home-page {
   z-index: 1;
   position: fixed;
   height: 100%;
   width: 100%;
   background: linear-gradient(#fee76c, #fee041); }
-  home-page #falling-food-container {
+  .home-page #falling-food-container {
     height: 100%;
     width: 100%;
     position: fixed;
@@ -145,15 +145,15 @@ home-page {
     -moz-animation: scrolling-bg 30s linear infinite;
     -o-animation: scrolling-bg 30s linear infinite;
     animation: scrolling-bg 30s linear infinite; }
-    home-page #falling-food-container .falling-food {
+    .home-page #falling-food-container .falling-food {
       width: 8vh;
       height: 8vh;
       -webkit-background-size: contain;
       background-size: contain;
       background-repeat: no-repeat; }
-  home-page .homepage-center {
+  .home-page .homepage-center {
     top: 40%; }
-    home-page .homepage-center .profile-picture-container {
+    .home-page .homepage-center .profile-picture-container {
       background-color: #FEDC28;
       -webkit-box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.3);
       -moz-box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.3);
@@ -163,7 +163,7 @@ home-page {
       border-radius: 50%;
       margin: 0 auto 7% auto;
       position: relative; }
-      home-page .homepage-center .profile-picture-container .profile-picture {
+      .home-page .homepage-center .profile-picture-container .profile-picture {
         height: calc(100% - 10px);
         width: calc(100% - 10px);
         border-radius: inherit;
@@ -172,7 +172,7 @@ home-page {
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain; }
-      home-page .homepage-center .profile-picture-container .profile-rank {
+      .home-page .homepage-center .profile-picture-container .profile-rank {
         background-image: url(../assets/global_assets/bunlevel1.png);
         background-repeat: no-repeat;
         background-position: center;
@@ -182,28 +182,28 @@ home-page {
         position: absolute;
         bottom: -0.5vh;
         right: -0.5vh; }
-    home-page .homepage-center .dishes-tried {
+    .home-page .homepage-center .dishes-tried {
       margin-bottom: 7%; }
-      home-page .homepage-center .dishes-tried h1 {
+      .home-page .homepage-center .dishes-tried h1 {
         font-family: AmaticSC;
         font-size: 16vh;
         text-align: center;
         color: #734521;
         font-weight: normal; }
-      home-page .homepage-center .dishes-tried h2 {
+      .home-page .homepage-center .dishes-tried h2 {
         font-family: Aleo;
         color: #F7B74F;
         font-size: 3vh;
         text-align: center;
         font-weight: normal; }
-    home-page .homepage-center .add-dishes .swiper {
+    .home-page .homepage-center .add-dishes .swiper {
       background-color: white;
       border-radius: 100px;
       width: 60%;
       height: 6vh;
       margin: 0 auto 10px auto;
       position: relative; }
-    home-page .homepage-center .add-dishes #pacman {
+    .home-page .homepage-center .add-dishes #pacman {
       top: 50%;
       transform: translateY(-50%);
       position: absolute;
@@ -214,7 +214,7 @@ home-page {
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain; }
-    home-page .homepage-center .add-dishes .beads {
+    .home-page .homepage-center .add-dishes .beads {
       top: 50%;
       transform: translateY(-50%);
       background-repeat: no-repeat;
@@ -222,30 +222,30 @@ home-page {
       position: absolute;
       width: 2vh;
       height: 2vh; }
-      home-page .homepage-center .add-dishes .beads:nth-child(2) {
+      .home-page .homepage-center .add-dishes .beads:nth-child(2) {
         left: 20%;
         background-image: url(../assets/home_screen/pea.png); }
-      home-page .homepage-center .add-dishes .beads:nth-child(3) {
+      .home-page .homepage-center .add-dishes .beads:nth-child(3) {
         left: 40%;
         background-image: url(../assets/home_screen/pea2.png); }
-      home-page .homepage-center .add-dishes .beads:nth-child(4) {
+      .home-page .homepage-center .add-dishes .beads:nth-child(4) {
         left: 60%;
         background-image: url(../assets/home_screen/pea.png); }
-      home-page .homepage-center .add-dishes .beads:nth-child(5) {
+      .home-page .homepage-center .add-dishes .beads:nth-child(5) {
         left: 80%;
         background-image: url(../assets/home_screen/pea2.png); }
-    home-page .homepage-center .add-dishes h2 {
+    .home-page .homepage-center .add-dishes h2 {
       font-family: Aleo;
       font-weight: normal;
       text-align: center;
       color: #F7B74F;
       font-size: 3vh; }
-  home-page .home-page-bottom-buttons {
+  .home-page .home-page-bottom-buttons {
     position: absolute;
     bottom: 5%;
     width: 100%;
     height: 21vh; }
-    home-page .home-page-bottom-buttons .left-button, home-page .home-page-bottom-buttons .right-button {
+    .home-page .home-page-bottom-buttons .left-button, .home-page .home-page-bottom-buttons .right-button {
       font-family: AmaticSC;
       display: inline-block;
       width: calc(50% - 30px);
@@ -255,29 +255,29 @@ home-page {
       color: #F3941C;
       background-size: cover;
       background-repeat: no-repeat; }
-    home-page .home-page-bottom-buttons .left-button {
+    .home-page .home-page-bottom-buttons .left-button {
       text-align: left;
       background-image: url(../assets/home_screen/home-discover-bg.png);
       background-position: right;
       left: 0;
       padding-left: 25px; }
-    home-page .home-page-bottom-buttons .right-button {
+    .home-page .home-page-bottom-buttons .right-button {
       text-align: right;
       background-image: url(../assets/home_screen/home-hitlist-bg.png);
       background-position: left;
       right: 0;
       padding-right: 25px; }
-  home-page .pacman-eat {
+  .home-page .pacman-eat {
     position: absolute;
     left: 85%;
     -webkit-animation: nom 0.8s normal linear forwards;
     animation: nom 0.8s normal linear forwards; }
-  home-page.ng-hide-add {
+  .home-page.ng-hide-add {
     -webkit-animation: slideOutRight 0.2s linear;
     -moz-animation: slideOutRight 0.2s linear;
     -o-animation: slideOutRight 0.2s linear;
     animation: slideOutRight 0.2s linear; }
-  home-page.ng-hide-remove {
+  .home-page.ng-hide-remove {
     -webkit-animation: slideInRight 0.2s linear;
     -moz-animation: slideInRight 0.2s linear;
     -o-animation: slideInRight 0.2s linear;
@@ -320,7 +320,7 @@ home-page {
   100% {
     left: calc(90% - 15px);
     background-image: url(../assets/home_screen/pacman1.png); } }
-.fallSpin, home-page #falling-food-container .falling-food {
+.fallSpin, .home-page #falling-food-container .falling-food {
   position: absolute;
   -webkit-animation: fallSpin 60s infinite  normal ease-out;
   animation: fallSpin 60s infinite  normal ease-out; }
@@ -376,24 +376,24 @@ home-page {
     -ms-transform: rotate(270deg);
     -o-transform: rotate(270deg);
     transform: rotate(270deg); } }
--new-item-module .search-bar-container {
-  background-image: url(../../assets/new_item_tried_screen/img-city.png);
+.new-item-module .search-bar-container {
+  background-image: url(../assets/new_item_tried_screen/img-city.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   width: 100%;
   height: 120px; }
-  -new-item-module .search-bar-container .search-bar {
+  .new-item-module .search-bar-container .search-bar {
     text-align: center;
     top: 45%;
     transform: translateY(-50%);
     position: relative; }
-    -new-item-module .search-bar-container .search-bar .fa-search {
+    .new-item-module .search-bar-container .search-bar .fa-search {
       position: absolute;
       line-height: 40px;
       margin-left: 15px;
       color: #A6A6A6; }
-    -new-item-module .search-bar-container .search-bar input {
+    .new-item-module .search-bar-container .search-bar input {
       width: 70%;
       border: none;
       line-height: 40px;
@@ -401,7 +401,7 @@ home-page {
       padding-right: 20px;
       border-radius: 5px;
       background-color: rgba(255, 255, 255, 0.9); }
--new-item-module .mid-section {
+.new-item-module .mid-section {
   height: calc(100% - 80px);
   width: 100%;
   box-shadow: 0 0 10px 0 #757575;
@@ -410,99 +410,99 @@ home-page {
   position: absolute;
   overflow-x: hidden;
   overflow-y: auto; }
-  -new-item-module .mid-section.ng-hide-add {
+  .new-item-module .mid-section.ng-hide-add {
     -webkit-animation: slideOutLeft 0.2s linear;
     -moz-animation: slideOutLeft 0.2s linear;
     -o-animation: slideOutLeft 0.2s linear;
     animation: slideOutLeft 0.2s linear; }
-  -new-item-module .mid-section.ng-hide-remove {
+  .new-item-module .mid-section.ng-hide-remove {
     -webkit-animation: slideInRight 0.2s linear;
     -moz-animation: slideInRight 0.2s linear;
     -o-animation: slideInRight 0.2s linear;
     animation: slideInRight 0.2s linear; }
-  -new-item-module .mid-section h2 {
+  .new-item-module .mid-section h2 {
     font-weight: normal;
     padding: 5px 3%;
     z-index: 1;
     line-height: 20px; }
-  -new-item-module .mid-section .food-container {
+  .new-item-module .mid-section .food-container {
     padding: 0 10px; }
-    -new-item-module .mid-section .food-container .food-listing {
+    .new-item-module .mid-section .food-container .food-listing {
       width: calc((100% - 70px) / 3);
       display: inline-block;
       vertical-align: top;
       height: calc(37vw - 5px);
       margin: 10px; }
-      -new-item-module .mid-section .food-container .food-listing.like, -new-item-module .mid-section .food-container .food-listing .dislike {
+      .new-item-module .mid-section .food-container .food-listing.like, .new-item-module .mid-section .food-container .food-listing .dislike {
         pointer-events: none; }
-        -new-item-module .mid-section .food-container .food-listing.like .picture-container .picture, -new-item-module .mid-section .food-container .food-listing .dislike .picture-container .picture {
+        .new-item-module .mid-section .food-container .food-listing.like .picture-container .picture, .new-item-module .mid-section .food-container .food-listing .dislike .picture-container .picture {
           opacity: 0.5; }
-      -new-item-module .mid-section .food-container .food-listing.like .status, -new-item-module .mid-section .food-container .food-listing.dislike .status, -new-item-module .mid-section .food-container .food-listing.hitlist .status {
+      .new-item-module .mid-section .food-container .food-listing.like .status, .new-item-module .mid-section .food-container .food-listing.dislike .status, .new-item-module .mid-section .food-container .food-listing.hitlist .status {
         z-index: 3;
         width: 10vw;
         height: 10vw;
         position: absolute;
         bottom: -10px;
         right: -10px; }
-      -new-item-module .mid-section .food-container .food-listing.like .status {
-        background-image: url(../../assets/new_item_tried_screen/bun-yum.png);
+      .new-item-module .mid-section .food-container .food-listing.like .status {
+        background-image: url(../assets/new_item_tried_screen/bun-yum.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain; }
-      -new-item-module .mid-section .food-container .food-listing.dislike .status {
-        background-image: url(../../assets/new_item_tried_screen/bun-meh.png);
+      .new-item-module .mid-section .food-container .food-listing.dislike .status {
+        background-image: url(../assets/new_item_tried_screen/bun-meh.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain; }
-      -new-item-module .mid-section .food-container .food-listing.hitlist .status {
-        background-image: url(../../assets/food_detail_screens/icn-hitlist50.png);
+      .new-item-module .mid-section .food-container .food-listing.hitlist .status {
+        background-image: url(../assets/food_detail_screens/icn-hitlist50.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
         background-color: #FEDC28;
         border-radius: 50%;
         background-size: 80%; }
-      -new-item-module .mid-section .food-container .food-listing.ng-enter {
+      .new-item-module .mid-section .food-container .food-listing.ng-enter {
         -webkit-animation: bounceIn 1.5s linear;
         -moz-animation: bounceIn 1.5s linear;
         -o-animation: bounceIn 1.5s linear;
         animation: bounceIn 1.5s linear; }
-      -new-item-module .mid-section .food-container .food-listing.ng-enter-stagger, -new-item-module .mid-section .food-container .food-listing.ng-leave-stagger, -new-item-module .mid-section .food-container .food-listing.ng-move-stagger {
+      .new-item-module .mid-section .food-container .food-listing.ng-enter-stagger, .new-item-module .mid-section .food-container .food-listing.ng-leave-stagger, .new-item-module .mid-section .food-container .food-listing.ng-move-stagger {
         /* notice how we're using animation instead of transition here */
         -webkit-animation-delay: 0.1s;
         animation-delay: 0.1s;
         /* yes we still need to do this too */
         -webkit-animation-duration: 0;
         animation-duration: 0; }
-      -new-item-module .mid-section .food-container .food-listing .picture-container {
+      .new-item-module .mid-section .food-container .food-listing .picture-container {
         height: calc(100% - 50px);
         border: solid 7px #d5d5d5;
         border-radius: 50%; }
-        -new-item-module .mid-section .food-container .food-listing .picture-container.add-item {
+        .new-item-module .mid-section .food-container .food-listing .picture-container.add-item {
           border: dashed 3px #d5d5d5; }
-          -new-item-module .mid-section .food-container .food-listing .picture-container.add-item.ng-enter {
+          .new-item-module .mid-section .food-container .food-listing .picture-container.add-item.ng-enter {
             -webkit-animation: bounceIn 1.5s linear;
             -moz-animation: bounceIn 1.5s linear;
             -o-animation: bounceIn 1.5s linear;
             animation: bounceIn 1.5s linear; }
-          -new-item-module .mid-section .food-container .food-listing .picture-container.add-item .no-picture {
+          .new-item-module .mid-section .food-container .food-listing .picture-container.add-item .no-picture {
             background-color: white; }
-            -new-item-module .mid-section .food-container .food-listing .picture-container.add-item .no-picture .need-photo {
+            .new-item-module .mid-section .food-container .food-listing .picture-container.add-item .no-picture .need-photo {
               border: none; }
-        -new-item-module .mid-section .food-container .food-listing .picture-container .picture, -new-item-module .mid-section .food-container .food-listing .picture-container .no-picture {
+        .new-item-module .mid-section .food-container .food-listing .picture-container .picture, .new-item-module .mid-section .food-container .food-listing .picture-container .no-picture {
           position: absolute;
           height: 100%;
           width: 100%;
           border-radius: 50%; }
-        -new-item-module .mid-section .food-container .food-listing .picture-container .picture {
+        .new-item-module .mid-section .food-container .food-listing .picture-container .picture {
           z-index: 1;
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat; }
-        -new-item-module .mid-section .food-container .food-listing .picture-container .no-picture {
+        .new-item-module .mid-section .food-container .food-listing .picture-container .no-picture {
           background-color: #D9D9D9;
           z-index: 0; }
-          -new-item-module .mid-section .food-container .food-listing .picture-container .no-picture .need-photo {
+          .new-item-module .mid-section .food-container .food-listing .picture-container .no-picture .need-photo {
             height: calc(100% - 30px);
             border-radius: 50%;
             border: solid 5px #d5d5d5;
@@ -510,52 +510,52 @@ home-page {
             margin: 0 auto;
             top: 50%;
             transform: translateY(-50%); }
-            -new-item-module .mid-section .food-container .food-listing .picture-container .no-picture .need-photo > div {
+            .new-item-module .mid-section .food-container .food-listing .picture-container .no-picture .need-photo > div {
               top: 50%;
               transform: translateY(-50%);
               text-align: center;
               font-size: 8vw; }
-              -new-item-module .mid-section .food-container .food-listing .picture-container .no-picture .need-photo > div p {
+              .new-item-module .mid-section .food-container .food-listing .picture-container .no-picture .need-photo > div p {
                 font-family: AmaticSC; }
-      -new-item-module .mid-section .food-container .food-listing .name {
+      .new-item-module .mid-section .food-container .food-listing .name {
         text-align: center;
         overflow: hidden;
         text-overflow: ellipsis;
         height: 33px;
         margin-top: 15px; }
-  -new-item-module .mid-section .list-container {
+  .new-item-module .mid-section .list-container {
     height: calc(100% - 150px);
     overflow: auto; }
-    -new-item-module .mid-section .list-container .restaurant-listing {
+    .new-item-module .mid-section .list-container .restaurant-listing {
       margin: 0 10px;
       border-bottom: solid 1px #D9D9D9; }
-      -new-item-module .mid-section .list-container .restaurant-listing .name, -new-item-module .mid-section .list-container .restaurant-listing .type {
+      .new-item-module .mid-section .list-container .restaurant-listing .name, .new-item-module .mid-section .list-container .restaurant-listing .type {
         display: inline-block;
         line-height: 300%;
         vertical-align: top;
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden; }
-      -new-item-module .mid-section .list-container .restaurant-listing .name {
+      .new-item-module .mid-section .list-container .restaurant-listing .name {
         display: inline-block;
         line-height: 300%;
         vertical-align: top;
         width: calc(70% - 5px); }
-      -new-item-module .mid-section .list-container .restaurant-listing .type {
+      .new-item-module .mid-section .list-container .restaurant-listing .type {
         width: 30%;
         text-align: right;
         color: #D9D9D9; }
-  -new-item-module .mid-section.rating {
+  .new-item-module .mid-section.rating {
     background-color: #FEE353;
     text-align: center; }
-    -new-item-module .mid-section.rating .picture-container {
+    .new-item-module .mid-section.rating .picture-container {
       background-color: #D9D9D9;
       height: 40vw;
       width: 40vw;
-      margin: 5% auto;
+      margin: 10px auto 0 auto;
       border-radius: 50%;
       border: solid 7px #fff4b8; }
-      -new-item-module .mid-section.rating .picture-container .no-picture {
+      .new-item-module .mid-section.rating .picture-container .no-picture {
         height: 65%;
         width: 65%;
         margin: 0 auto;
@@ -563,34 +563,34 @@ home-page {
         top: 50%;
         transform: translateY(-50%);
         border: solid 7px #F7F7F7; }
-        -new-item-module .mid-section.rating .picture-container .no-picture .content {
+        .new-item-module .mid-section.rating .picture-container .no-picture .content {
           position: absolute;
           top: 50%;
           transform: translateY(-50%);
           width: 100%; }
-          -new-item-module .mid-section.rating .picture-container .no-picture .content .photo-icon {
-            background-image: url(../../assets/new_item_tried_screen/icn-camera.png);
+          .new-item-module .mid-section.rating .picture-container .no-picture .content .photo-icon {
+            background-image: url(../assets/new_item_tried_screen/icn-camera.png);
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
             height: 8vw;
             width: 100%; }
-          -new-item-module .mid-section.rating .picture-container .no-picture .content h2 {
+          .new-item-module .mid-section.rating .picture-container .no-picture .content h2 {
             font-family: AmaticSC;
             text-align: center; }
-      -new-item-module .mid-section.rating .picture-container .picture {
+      .new-item-module .mid-section.rating .picture-container .picture {
         height: 100%;
         width: 100%;
         position: absolute;
         top: 0;
         border-radius: 50%; }
-    -new-item-module .mid-section.rating .text {
+    .new-item-module .mid-section.rating .text {
       text-align: center;
       font-family: AmaticSC;
       width: 100%;
       font-size: 5vw;
       line-height: 140%; }
-    -new-item-module .mid-section.rating .rate .meh, -new-item-module .mid-section.rating .rate .yum {
+    .new-item-module .mid-section.rating .rate .meh, .new-item-module .mid-section.rating .rate .yum {
       background-color: #fff4b8;
       height: 35vw;
       width: 35vw;
@@ -599,96 +599,96 @@ home-page {
       border: solid 7px white;
       display: inline-block;
       vertical-align: top; }
-      -new-item-module .mid-section.rating .rate .meh .vertical-center, -new-item-module .mid-section.rating .rate .yum .vertical-center {
+      .new-item-module .mid-section.rating .rate .meh .vertical-center, .new-item-module .mid-section.rating .rate .yum .vertical-center {
         height: 70%; }
-        -new-item-module .mid-section.rating .rate .meh .vertical-center .icon, -new-item-module .mid-section.rating .rate .yum .vertical-center .icon {
+        .new-item-module .mid-section.rating .rate .meh .vertical-center .icon, .new-item-module .mid-section.rating .rate .yum .vertical-center .icon {
           height: 80%;
           width: 100%; }
-        -new-item-module .mid-section.rating .rate .meh .vertical-center h2, -new-item-module .mid-section.rating .rate .yum .vertical-center h2 {
+        .new-item-module .mid-section.rating .rate .meh .vertical-center h2, .new-item-module .mid-section.rating .rate .yum .vertical-center h2 {
           font-family: AmaticSC;
           font-size: 32px;
           margin-top: 5px; }
-      -new-item-module .mid-section.rating .rate .meh:hover, -new-item-module .mid-section.rating .rate .yum:hover {
+      .new-item-module .mid-section.rating .rate .meh:hover, .new-item-module .mid-section.rating .rate .yum:hover {
         background-color: #FDD520;
         border: solid 7px #F5A623; }
-    -new-item-module .mid-section.rating .rate .meh .icon {
-      background-image: url(../../assets/new_item_tried_screen/bun-meh.png);
+    .new-item-module .mid-section.rating .rate .meh .icon {
+      background-image: url(../assets/new_item_tried_screen/bun-meh.png);
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain; }
-    -new-item-module .mid-section.rating .rate .yum .icon {
-      background-image: url(../../assets/new_item_tried_screen/bun-yum.png);
+    .new-item-module .mid-section.rating .rate .yum .icon {
+      background-image: url(../assets/new_item_tried_screen/bun-yum.png);
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain; }
--new-item-module .no-location {
+.new-item-module .no-location {
   height: calc(100% - (50px + 180px));
   box-shadow: 0 0 10px 0 #757575; }
-  -new-item-module .no-location > div {
+  .new-item-module .no-location > div {
     top: 50%;
     transform: translateY(-50%);
     position: relative;
     text-align: center; }
-    -new-item-module .no-location > div h2 {
+    .new-item-module .no-location > div h2 {
       font-size: 10vw;
       line-height: 140%;
       font-weight: normal;
       font-family: AmaticSC; }
-    -new-item-module .no-location > div p {
+    .new-item-module .no-location > div p {
       font-family: AmaticSC; }
-    -new-item-module .no-location > div .lost-image {
-      background-image: url(../../assets/new_item_tried_screen/bun-meh.png);
+    .new-item-module .no-location > div .lost-image {
+      background-image: url(../assets/new_item_tried_screen/bun-meh.png);
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
       height: 20vh;
       margin: 20px auto;
       width: 30vh; }
--new-item-module .new-item-module-progress-container {
+.new-item-module .new-item-module-progress-container {
   position: fixed;
   height: 80px;
   bottom: 0;
   width: 100%;
   z-index: 1; }
-  -new-item-module .new-item-module-progress-container .new-item-module-progress {
+  .new-item-module .new-item-module-progress-container .new-item-module-progress {
     width: 90%;
     position: relative;
     margin: 0 auto;
     top: 50%;
     transform: translateY(-50%); }
-    -new-item-module .new-item-module-progress-container .new-item-module-progress > div {
+    .new-item-module .new-item-module-progress-container .new-item-module-progress > div {
       display: inline-block; }
-    -new-item-module .new-item-module-progress-container .new-item-module-progress .progress-icon {
+    .new-item-module .new-item-module-progress-container .new-item-module-progress .progress-icon {
       width: 40px;
       height: 40px;
       vertical-align: bottom; }
-      -new-item-module .new-item-module-progress-container .new-item-module-progress .progress-icon.locate {
-        background-image: url(../../assets/new_item_tried_screen/nav-place1.png);
+      .new-item-module .new-item-module-progress-container .new-item-module-progress .progress-icon.locate {
+        background-image: url(../assets/new_item_tried_screen/nav-place1.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain; }
-      -new-item-module .new-item-module-progress-container .new-item-module-progress .progress-icon.pick {
-        background-image: url(../../assets/new_item_tried_screen/nav-item1.png);
+      .new-item-module .new-item-module-progress-container .new-item-module-progress .progress-icon.pick {
+        background-image: url(../assets/new_item_tried_screen/nav-item1.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain; }
-        -new-item-module .new-item-module-progress-container .new-item-module-progress .progress-icon.pick.activated {
-          background-image: url(../../assets/new_item_tried_screen/nav-item2.png);
+        .new-item-module .new-item-module-progress-container .new-item-module-progress .progress-icon.pick.activated {
+          background-image: url(../assets/new_item_tried_screen/nav-item2.png);
           background-repeat: no-repeat;
           background-position: center;
           background-size: contain; }
-      -new-item-module .new-item-module-progress-container .new-item-module-progress .progress-icon.like {
-        background-image: url(../../assets/new_item_tried_screen/nav-opinion1.png);
+      .new-item-module .new-item-module-progress-container .new-item-module-progress .progress-icon.like {
+        background-image: url(../assets/new_item_tried_screen/nav-opinion1.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain; }
-        -new-item-module .new-item-module-progress-container .new-item-module-progress .progress-icon.like.activated {
-          background-image: url(../../assets/new_item_tried_screen/nav-opinion2.png);
+        .new-item-module .new-item-module-progress-container .new-item-module-progress .progress-icon.like.activated {
+          background-image: url(../assets/new_item_tried_screen/nav-opinion2.png);
           background-repeat: no-repeat;
           background-position: center;
           background-size: contain; }
-    -new-item-module .new-item-module-progress-container .new-item-module-progress .progress-line {
-      background-image: url(../../assets/new_item_tried_screen/nav-line1.png);
+    .new-item-module .new-item-module-progress-container .new-item-module-progress .progress-line {
+      background-image: url(../assets/new_item_tried_screen/nav-line1.png);
       background-repeat: repeat-x;
       width: calc(50% - 65px);
       height: 5px;
@@ -696,7 +696,7 @@ home-page {
       margin-bottom: 6px;
       margin-left: -5px;
       margin-right: -5px; }
-      -new-item-module .new-item-module-progress-container .new-item-module-progress .progress-line.activated {
-        background-image: url(../../assets/new_item_tried_screen/nav-line2.png); }
+      .new-item-module .new-item-module-progress-container .new-item-module-progress .progress-line.activated {
+        background-image: url(../assets/new_item_tried_screen/nav-line2.png); }
 
 /*# sourceMappingURL=main.css.map */

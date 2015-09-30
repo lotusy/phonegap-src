@@ -51,5 +51,9 @@ Foodster.controller('HomePageController', ['$scope', '$rootScope', '$http', func
         };
         eatBeads(0);
         $scope.swiped = true;
+    };
+    $scope.holdingPacman = false;
+    $scope.movePacman = function(event){
+        console.log('meow');
     }
 }]);

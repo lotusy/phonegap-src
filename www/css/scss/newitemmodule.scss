@@ -1,6 +1,6 @@
--new-item-module {
+.new-item-module {
   .search-bar-container {
-    @include backgroundify(url(../../assets/new_item_tried_screen/img-city.png));
+    @include backgroundify(url(../assets/new_item_tried_screen/img-city.png));
     width: 100%;
     height: 120px;
     .search-bar {
@@ -75,17 +75,17 @@
         }
         &.like{
           .status{
-            @include iconify(url(../../assets/new_item_tried_screen/bun-yum.png));
+            @include iconify(url(../assets/new_item_tried_screen/bun-yum.png));
           }
         }
         &.dislike{
           .status{
-            @include iconify(url(../../assets/new_item_tried_screen/bun-meh.png));
+            @include iconify(url(../assets/new_item_tried_screen/bun-meh.png));
           }
         }
         &.hitlist{
           .status{
-            @include iconify(url(../../assets/food_detail_screens/icn-hitlist50.png));
+            @include iconify(url(../assets/food_detail_screens/icn-hitlist50.png));
             background-color: $yellow-medium;
             border-radius: 50%;
             background-size: 80%;
@@ -197,7 +197,7 @@
         background-color: $grey-light;
         height: 40vw;
         width: 40vw;
-        margin: 5% auto;
+        margin: 10px auto 0 auto;
         border-radius: 50%;
         border: solid 7px lighten($yellow-light, 20);
         .no-picture{
@@ -214,7 +214,7 @@
             transform: translateY(-50%);
             width: 100%;
             .photo-icon{
-              @include iconify(url(../../assets/new_item_tried_screen/icn-camera.png));
+              @include iconify(url(../assets/new_item_tried_screen/icn-camera.png));
               height: 8vw;
               width: 100%;
             }
@@ -269,12 +269,12 @@
         }
         .meh{
             .icon{
-              @include iconify(url(../../assets/new_item_tried_screen/bun-meh.png));
+              @include iconify(url(../assets/new_item_tried_screen/bun-meh.png));
             }
         }
         .yum{
             .icon{
-              @include iconify(url(../../assets/new_item_tried_screen/bun-yum.png));
+              @include iconify(url(../assets/new_item_tried_screen/bun-yum.png));
             }
         }
       }
@@ -296,7 +296,7 @@
       }
       p{font-family: AmaticSC}
       .lost-image{
-        @include iconify(url(../../assets/new_item_tried_screen/bun-meh.png));
+        @include iconify(url(../assets/new_item_tried_screen/bun-meh.png));
         height: 20vh;
         margin: 20px auto;
         width: 30vh;
@@ -323,25 +323,25 @@
         height: 40px;
         vertical-align: bottom;
         &.locate{
-          @include iconify(url(../../assets/new_item_tried_screen/nav-place1.png));
+          @include iconify(url(../assets/new_item_tried_screen/nav-place1.png));
         }
         &.pick{
-          @include iconify(url(../../assets/new_item_tried_screen/nav-item1.png));
+          @include iconify(url(../assets/new_item_tried_screen/nav-item1.png));
           &.activated{
-            @include iconify(url(../../assets/new_item_tried_screen/nav-item2.png));
+            @include iconify(url(../assets/new_item_tried_screen/nav-item2.png));
           }
         }
         &.like{
-          @include iconify(url(../../assets/new_item_tried_screen/nav-opinion1.png));
+          @include iconify(url(../assets/new_item_tried_screen/nav-opinion1.png));
           &.activated{
-            @include iconify(url(../../assets/new_item_tried_screen/nav-opinion2.png));
+            @include iconify(url(../assets/new_item_tried_screen/nav-opinion2.png));
           }
         }
       }
       .progress-line{
-        background-image:url(../../assets/new_item_tried_screen/nav-line1.png);
+        background-image:url(../assets/new_item_tried_screen/nav-line1.png);
         &.activated{
-          background-image:url(../../assets/new_item_tried_screen/nav-line2.png);
+          background-image:url(../assets/new_item_tried_screen/nav-line2.png);
         }
         background-repeat: repeat-x;
 

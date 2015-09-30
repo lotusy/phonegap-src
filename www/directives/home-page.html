@@ -11,8 +11,8 @@
         <h2>woot!</h2>
     </div>
     <div class="add-dishes">
-        <div class="swiper" ng-swipe-right="swipedAddDish()">
-            <div id="pacman" ng-class="swiped ? 'pacman-eat' : ''"></div>
+        <div id="swiper" class="swiper">
+            <div id="pacman" ng-class="swiped ? 'pacman-eat' : ''" hm-tap="console.log('meow')"></div>
             <div class="beads" ng-hide="beadEaten > 1"></div>
             <div class="beads" ng-hide="beadEaten > 2"></div>
             <div class="beads" ng-hide="beadEaten > 3"></div>
@@ -25,3 +25,4 @@
     <div class="left-button">DISCOVER</div>
     <div class="right-button">HITLIST</div>
 </div>
+<script type="text/javascript" src="../js/slidetounlock.js"></script>

@@ -1,11 +1,10 @@
-Foodster.controller('LoginController', ['$scope', '$rootScope', '$http', 'UserService', '$location', function($scope, $rootScope, $http, UserService, $location) {
+Foodster.controller('LoginController', ['$scope', '$rootScope', '$http', 'UserService', '$location', '$cordovaFacebook', function($scope, $rootScope, $http, UserService, $location, $cordovaFacebook) {
     $scope.facebookLogin = function(){
-        var uri = "https://www.facebook.com/dialog/oauth?",
-            client_id = "app_id=942902509107981",
-            redirect_uri="redirect_uri=http://localhost:3000/?token_type=facebook&",
-            response_type="response_type=token";
-        window.location.href = uri+client_id+"&"+redirect_uri+"&"+response_type;
-    }
+        $cordovaFacebook.login(["public_profile", "user_friends"])
+            .then(function(success){
+                console.log(success);
+            })
+    };
     var url = $location.url(),
         access_token = url.match(/\#(?:access_token)\=([\S\s]*?)\&/),
         type = url.match(/\?(?:token_type)\=([\S\s]*?)\#/);
